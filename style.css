@@ -1,0 +1,2756 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.testTarget {
+  background-color: rgb(244, 228, 245);
+  padding: 20px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.sephora {
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.sephora_img {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.sephora_img p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.search_input input {
+  border-radius: 30px;
+  border: 1px solid black;
+  padding: 5px 105px 5px 35px;
+  background-color: rgb(246, 253, 255);
+  outline: none;
+}
+
+.fresnel_container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.fresnel_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment_icon {
+  font-size: 20px;
+  color: rgb(128, 0, 128);
+}
+
+.chat_news {
+  line-height: 18px;
+}
+
+.new {
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+}
+
+.text_chat .chat {
+  font-weight: 500;
+  color: black;
+  font-size: 14px;
+}
+
+.news span {
+  font-weight: 500;
+}
+
+.fresnel_container {
+  position: relative;
+}
+.hover_box {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  min-width: 374px;
+  left: 50%;
+  margin-left: -187px;
+  z-index: 1;
+  font-weight: 400;
+}
+.divider2 {
+  border-bottom: 8px solid rgb(238, 238, 238);
+  padding: 0 10px;
+}
+.try {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.start_chat {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-image: linear-gradient(
+    105deg,
+    rgb(235, 212, 255) 0%,
+    rgb(255, 229, 212) 100%
+  );
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-weight: 700;
+}
+.color {
+  line-height: 30px;
+}
+.color:hover {
+  color: #8d8888;
+}
+
+.shop_icon {
+  font-size: 18px;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.delivery span b {
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.shop_section1 {
+  display: flex;
+  flex-direction: column;
+}
+.button_section button {
+  border-radius: 30px;
+  padding: 5px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.button_section button:hover {
+  background-color: #8d8888;
+}
+.sephora_link {
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.delivery_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+.delivery_section {
+  display: flex;
+  flex-direction: column;
+}
+.delivery_btn button {
+  border-radius: 30px;
+  border: none;
+  padding: 5px 11px;
+  background-color: black;
+  color: white;
+}
+.delivery_btn button:hover {
+  background-color: #8d8888;
+}
+
+.services_icon {
+  font-size: 20px;
+}
+
+.event_header {
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.services_container {
+  padding-bottom: 20px;
+}
+.service_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.service_details span {
+  font-size: 10px;
+  color: #8d8888;
+}
+.service_details h5 {
+  line-height: 1px;
+  font-size: 15px;
+}
+.divider3 {
+  border-bottom: 8px solid rgb(238, 238, 238);
+  padding: 0 10px;
+  margin: 15px 0;
+}
+.additional_links {
+  display: flex;
+  gap: 10px;
+}
+.hover_box a {
+  text-decoration: none;
+}
+.service_details h5 {
+  color: black;
+}
+
+/*Events*/
+.events_section {
+  display: flex;
+  gap: 20px;
+}
+
+.filters_container {
+  width: 20%;
+}
+
+.breadcrumb_link {
+  color: #8d8888;
+  font-size: 13px;
+}
+.breadcrumb_link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb_current {
+  font-size: 14px;
+}
+
+.filters_title {
+  color: #8d8888;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.filter_section {
+  line-height: 30px;
+}
+
+.filter_header1 {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter_heading {
+  font-size: 17px;
+}
+
+.filter_header2 {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 10px;
+}
+
+.location_header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.filter_header3 {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+.event_result_count {
+  color: #8d8888;
+}
+
+.events_container {
+  width: 80%;
+  margin-top: 30px;
+}
+
+.events_toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.event_card_img img {
+  width: 100%;
+}
+
+.event_card_content p {
+  font-size: 13px;
+  color: #8d8888;
+}
+.event_card_content div {
+  margin-bottom: 10px;
+}
+.event_card_content h2 {
+  font-size: 18px;
+}
+
+.events_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 22px;
+}
+
+.load_more button {
+  border-radius: 30px;
+  border: 2px solid black;
+  background-color: transparent;
+  padding: 5px 30px;
+}
+.load_more button:hover {
+  border: 2px solid #8d8888;
+  color: #8d8888;
+}
+
+.expect_title {
+  font-size: 23px;
+}
+
+.expect_subtitle {
+  margin-top: 20px;
+}
+
+.expect_list {
+  display: flex;
+  gap: 20px;
+}
+
+.expect_info {
+  font-size: 14px;
+}
+
+.expect_info_title {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.more_services_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more_services_title {
+  font-size: 22px;
+}
+
+.more_services_viewall a {
+  text-decoration: none;
+}
+.more_services_viewall:hover {
+  text-decoration: underline;
+  color: rgb(19, 107, 234);
+}
+
+.more_services_list {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.service_name {
+  font-size: 20px;
+}
+
+.more_services_card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 1.25;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px 0px;
+  backdrop-filter: blur(40px);
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.card_img_wrapper {
+  width: 100%;
+}
+
+.card_img_wrapper img {
+  width: 90%;
+}
+
+.service_card_body {
+  display: flex;
+}
+
+.more a {
+  text-decoration: none;
+}
+.more:hover {
+  text-decoration: underline;
+  color: rgb(19, 107, 234);
+}
+/*Events*/
+
+/*My Reservations*/
+.page_title {
+  font-size: 30px;
+}
+
+.action_links {
+  margin-top: 20px;
+}
+
+.warning_message {
+  font-size: 23px;
+  margin-top: 25px;
+}
+
+.signin_buttons {
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding: 7px 100px;
+  border: 2px solid black;
+  background-color: transparent;
+  font-weight: 500;
+}
+.signin_buttons:hover {
+  border: 2px solid #8d8888;
+  color: #8d8888;
+}
+
+.actions_link {
+  margin-top: 20px;
+}
+/*My Reservations*/
+
+/*Beauty Service Faqs*/
+.info_section {
+  display: flex;
+}
+
+.info_container {
+  width: 20%;
+}
+
+.catagory_list {
+  color: #8d8888;
+  font-size: 13px;
+}
+
+.content_area {
+  margin-top: 20px;
+}
+
+.shopping_heading {
+  font-size: 20px;
+}
+
+.beauty_services_faqs {
+  width: 80%;
+  margin-top: 40px;
+}
+
+.faq_catagories h1 {
+  font-size: 25px;
+}
+
+.faq_catagories {
+  margin-bottom: 20px;
+}
+
+/*Beauty Service Faqs*/
+
+/*Sign In*/
+.sigIn {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.auth-box button {
+  width: 150px;
+  margin: 5px 0;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.btn1 {
+  border-radius: 20px;
+  background-color: black;
+  border: none;
+}
+.btn1:hover {
+  background-color: #8d8888;
+}
+.btn1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn2 {
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: white;
+  font-weight: 500;
+}
+.btn2:hover {
+  border: 2px solid #8d8888;
+}
+.btn2 a:hover {
+  color: #8d8888;
+}
+.btn2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.img_container img {
+  width: 150%;
+}
+
+.intro_section {
+  display: flex;
+
+  gap: 25px;
+}
+
+.text_content {
+  font-size: 12px;
+}
+
+/*Sign In*/
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 220px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 15px pink;
+  border-radius: 5px;
+  padding: 12px;
+}
+.previously {
+  text-align: center;
+}
+.hr_basket p {
+  font-size: 13px;
+}
+
+.rigth {
+  display: flex;
+  gap: 20px;
+}
+
+.icon_box {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.icon_box:hover .dropdown {
+  display: block;
+}
+.icon_box:hover .loves i {
+  font-weight: 900;
+}
+
+.loves i,
+.basket  {
+  font-size: 25px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.icon_title {
+  font-size: 17px;
+}
+
+.primary_btn {
+  padding: 5px 40px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.primary_btn:hover {
+  background-color: #6c6666;
+}
+
+.secondary_btn {
+  padding: 5px 40px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+}
+.secondary_btn:hover {
+  border: 2px solid #6c6666;
+  color: #6c6666;
+}
+
+.sephora_nav {
+  background-color: black;
+}
+
+.sephora_nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav_item {
+  position: relative;
+}
+.dropdown1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 1200px;
+  padding: 20px;
+
+  z-index: 1;
+}
+.dropdown_content {
+  display: flex;
+
+
+}
+.newness_column {
+  width: 25%;
+}
+.newness_column h6 a,
+.trending_column h6 a {
+  color: black;
+  line-height: 25px;
+  font-size: 14px;
+}
+.newness_column h6 a:hover,
+.trending_column h6 a:hover {
+  text-decoration: underline;
+}
+.newness_column i,
+.trending_column i {
+  font-size: 10px;
+}
+.trending_column {
+  width: 25%;
+}
+.images_column {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+}
+.images_column img {
+  width: 70%;
+}
+
+.promo_section {
+  margin: 5px 10px;
+}
+
+.hero_section1 {
+  width: 65%;
+  background-color: rgb(140, 178, 225);
+  border-radius: 5px;
+}
+
+.text_container {
+  padding: 20px;
+}
+
+.text_container1 {
+  padding: 20px;
+  color: white;
+}
+
+.hero_section2 {
+  width: 65%;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.hero_section2 img {
+  width: 100%;
+}
+
+.hero_section3 {
+  width: 65%;
+  background-color: rgb(241, 182, 175);
+  border-radius: 5px;
+}
+
+.hero_section3 img {
+  width: 100%;
+}
+
+.hero_section4 {
+  width: 65%;
+  background-color: rgb(0, 150, 184);
+  border-radius: 5px;
+}
+.hero_section4 img {
+  width: 100%;
+}
+
+section {
+  margin: 45px 80px;
+}
+
+.chosen {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.versace_img img {
+  width: 100%;
+  border-radius: 4px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.versace_img {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  padding: 12px;
+  flex-direction: column;
+  min-height: 360px;
+}
+
+.versace_img h5 {
+  font-size: 12px;
+}
+
+.star_icon {
+  font-size: 12px;
+  margin-top: auto;
+}
+
+.offers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beauty {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.view {
+  color: blue;
+}
+.view:hover {
+  text-decoration: underline;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+}
+
+.product_image1 img,
+.product_image2 img,
+.product_image3 img,
+.product_image4 img,
+.product_image5 img {
+  width: 100%;
+}
+
+.product_price {
+  padding: 15px;
+  line-height: 15px;
+}
+
+.product_price h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.perfume {
+  font-weight: 500;
+}
+
+.shop_button {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: auto;
+}
+
+.shop_button button {
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+.shop_button button:hover {
+  border: 2px solid darkgray;
+  color: darkgray;
+}
+
+.shop_button span {
+  color: blue;
+  margin: 10px 0;
+}
+.shop_button span:hover {
+  text-decoration: underline;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  padding: 12px;
+  flex-direction: column;
+}
+
+.fragrance_img img {
+  width: 100%;
+}
+
+.product_title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product_title h5 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.product_title h6 {
+  font-size: 13px;
+}
+
+.price {
+  display: flex;
+  gap: 5px;
+  margin-top: auto;
+}
+
+.red {
+  color: red;
+}
+
+.price_del {
+  text-decoration: line-through;
+}
+
+.beauty_section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.promo_img img {
+  border-radius: 5px 5px 0 0;
+  height: 220px;
+  object-fit: cover;
+}
+
+.promo_images {
+  display: flex;
+}
+
+.promo_text_block {
+  background-color: rgb(157, 194, 193);
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+.promo_text_block h3 {
+  font-size: 20px;
+}
+
+.promo_info {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+.promo_info h3 {
+  font-size: 20px;
+}
+
+.promo_details {
+  background-color: rgb(181, 87, 25);
+  padding: 20px;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+.promo_details h3 {
+  font-size: 20px;
+}
+
+.product_card {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  flex-direction: column;
+  width: 200px;
+  height: 320px;
+}
+
+.product_img img {
+  width: 100%;
+}
+
+.product_details {
+  padding: 15px;
+}
+.product_details h5 {
+  font-size: 14px;
+}
+
+.beauty_insider_rewards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rewards_text {
+  line-height: 5px;
+}
+
+.rewards_text h2 b {
+  font-size: 25px;
+}
+.rewards_text span {
+  font-weight: 400;
+}
+
+.view_all span {
+  color: blue;
+  font-weight: 400;
+}
+.view_all span:hover {
+  text-decoration: underline;
+}
+
+.product_reward {
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  padding: 12px;
+  flex-direction: column;
+}
+
+.reward_list {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.image_container img {
+  width: 100%;
+}
+
+.product_info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.product_info h6 {
+  font-weight: 700;
+}
+
+.accsess {
+  margin: 20px 0;
+}
+.accsess button {
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 5px 10px;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.guidance_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guidance_info {
+  font-weight: 500;
+}
+.guidance_info h2 {
+  font-size: 25px;
+}
+
+.gift_images img {
+  width: 100%;
+  height: 50px;
+}
+
+.gift_text span {
+  font-weight: 500;
+}
+
+.gift_item {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  flex-direction: column;
+  line-height: 1.25;
+  font-size: 12px;
+  padding: 8px;
+  gap: 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  border-radius: 4px;
+  width: 100px;
+}
+
+.rewards_section {
+  display: flex;
+  gap: 15px;
+}
+
+.rewards_details {
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  padding: 5px 15px;
+}
+
+.payment_options {
+  background-color: rgb(141, 184, 227);
+  font-size: 13px;
+  padding: 15px;
+}
+
+.beauty_services {
+  background-color: rgb(189, 220, 238);
+  font-size: 13px;
+  padding: 15px;
+}
+
+.banner_image1 img,
+.banner_image2 img,
+.banner_image3 img {
+  width: 100%;
+}
+
+.website {
+  display: flex;
+  background-color: rgb(204, 204, 204);
+  justify-content: center;
+}
+
+.site_footer {
+  background-color: black;
+  padding: 0 0 50px 0;
+}
+body {
+  overflow: visible;
+}
+
+.find_store {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.store_icon {
+  font-size: 25px;
+  color: white;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: white;
+}
+.texts a {
+  color: white;
+  text-decoration: none;
+}
+.texts a:hover {
+  text-decoration: underline;
+}
+
+.footer_divider {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: white;
+  margin: 0 100px;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+
+  color: white;
+  font-size: 13px;
+}
+
+.about ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.lists li {
+  font-weight: 100;
+}
+
+.lists li:hover {
+  text-decoration: underline;
+}
+
+.language span:hover {
+  text-decoration: underline;
+}
+
+.about h2,
+.my_sephora h2,
+.help h2 {
+  font-size: 18px;
+  margin: 10px 30px;
+}
+
+.united_img img,
+.canada_img img,
+.flag_icon img {
+  width: 55%;
+}
+
+.language_option {
+  display: flex;
+}
+
+.language h2 {
+  font-size: 18px;
+}
+.language {
+  line-height: 30px;
+  padding: 8px;
+}
+
+.brand_tagline h2 {
+  font-size: 22px;
+}
+
+.register {
+  margin-top: 30px;
+}
+
+.text_input {
+  display: flex;
+}
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+.signUp input {
+  padding: 7px 50px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.btn_continue button,
+.btn_signUp button {
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  margin: 35px 15px;
+}
+.btn_continue button:hover,
+.btn_signUp button:hover {
+  border: 1px solid darkgray;
+  color: darkgray;
+}
+
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 100px;
+}
+
+.footer_legal_section img {
+  width: 4%;
+}
+.footer_legal_section a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  font-size: 13px;
+}
+.footer_legal_section a:hover {
+  text-decoration: underline;
+}
+
+.footer_legal_section {
+  color: white;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.footer_social_links {
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.left_text1 h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.left_text1 div:hover {
+  text-decoration: underline;
+}
+
+.left_text2 h2 {
+  line-height: 1.25;
+  font-size: 13px;
+  margin-top: 32px;
+  color: rgb(102, 102, 102);
+}
+
+.filter_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #e1e1e1;
+  line-height: 3.25;
+}
+
+.filter_header div {
+  font-weight: 700;
+}
+.filter_header div:hover {
+  text-decoration: underline;
+}
+
+.product_image img {
+  width: 80%;
+}
+
+.product_details {
+  font-size: 14px;
+}
+
+.price_red {
+  color: red;
+}
+.del {
+  text-decoration: line-through;
+}
+
+.results_info {
+  text-align: center;
+  margin: 40px;
+}
+
+.results_info p {
+  color: rgb(102, 102, 102);
+}
+
+.results_info button {
+  border-radius: 25px;
+  padding: 5px 30px;
+  border: 2px solid black;
+  background-color: transparent;
+}
+.results_info button:hover {
+  border: 2px solid gray;
+  color: gray;
+}
+
+/*Sale & Offers*/
+.page {
+  padding: 10px;
+  overflow: visible; /* VACİB */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SORT WRAPPER */
+.sort-wrapper {
+  display: flex;
+  position: relative;
+  width: 260px;
+  z-index: 100000; /* bütün layout-dan yuxarı */
+}
+
+/* BUTTON */
+.sort-btn {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #333;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* ICON */
+.sort-btn i {
+  transition: transform 0.25s ease;
+}
+
+/* DROPDOWN */
+.sort-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+
+  width: 100%;
+  background: #ffffff; /* ÇOX VACİB */
+  border: 1px solid #333;
+
+  list-style: none;
+  display: none;
+
+  z-index: 100001; /* wrapper-dən də yuxarı */
+}
+
+/* ITEMS */
+.sort-dropdown li {
+  padding: 12px 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* HOVER */
+.sort-dropdown li:hover {
+  background-color: #f2f2f2;
+}
+
+/* ACTIVE */
+.sort-wrapper.active .sort-dropdown {
+  display: block;
+}
+
+.sort-wrapper.active .sort-btn i {
+  transform: rotate(180deg);
+}
+/*Sale & Offers*/
+
+/*Services & Events*/
+.services_title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.services_info {
+  background-color: rgb(225, 188, 206);
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px;
+}
+
+.services_buttons:hover {
+  color: #8d8888;
+}
+.services_buttons button {
+  padding: 0 80px;
+}
+.btn {
+  line-height: 1.25;
+  font-size: 12px;
+  gap: 8px;
+  min-height: 44px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  border-radius: 4px;
+}
+
+.services_subtitle {
+  font-size: 20px;
+}
+
+.services_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.service_card {
+  display: flex;
+  gap: 16px;
+}
+
+.service_image {
+  width: 40%;
+}
+.service_image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.service_details {
+  width: 100%;
+  font-size: 14px;
+}
+
+.service_details h2 {
+  font-size: 17px;
+}
+
+.divider {
+  border-bottom: 1px solid rgb(238, 238, 238);
+  margin: 0 100px;
+}
+
+.brow_card_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.brow_card {
+  display: flex;
+  gap: 16px;
+}
+
+.brow_image {
+  width: 40%;
+}
+.brow_image img {
+  width: 95%;
+  border-radius: 5px;
+}
+
+.brow_info {
+  width: 80%;
+}
+.brow_info h2 {
+  font-size: 17px;
+}
+
+.info_sections {
+  margin: 20px 0;
+}
+
+.arrival-image img {
+  width: 20%;
+}
+
+.arrival-details {
+  margin: 15px 0;
+}
+
+.arrival-details h2 {
+  font-size: 20px;
+}
+.arrival-details p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.event_list {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.event_image img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.event_details {
+  line-height: 1.25;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px 0px;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.event_details h2 {
+  font-size: 20px;
+}
+
+.event_details p {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  margin-bottom: 8px;
+}
+/*Services & Events*/
+
+/*Sign In*/
+.auth_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth_container {
+  width: 500px;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.form_title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.loginForm input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+.loginOptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.terms_text {
+  font-size: 11px;
+  color: rgb(102, 102, 102);
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.primaryBtn {
+  font-size: 14px;
+  border-radius: 30px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding: 10px 70px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.primaryBtn:hover {
+  background-color: #8d8888;
+  color: white;
+}
+
+.divider1 {
+  border-bottom: 2px solid rgb(238, 238, 238);
+  margin: 0;
+}
+
+.signup_section {
+  margin: 20px 0;
+}
+
+.create_account_button {
+  margin: 20px 0;
+  font-size: 14px;
+  border-radius: 30px;
+  border: 2px solid black;
+  color: black;
+  background-color: transparent;
+  padding: 10px 45px;
+  font-weight: 700;
+}
+.create_account_button:hover {
+  border: 2px solid #8d8888;
+  color: #8d8888;
+}
+
+.signup_title {
+  font-size: 18px;
+  font-weight: 600;
+}
+/*Sign In*/
+
+/*Create Account*/
+.register_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register_wrapper {
+  width: 500px;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.register_title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.register_logo img {
+  width: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.register_form_area input {
+  padding: 10px 250px 10px 10px;
+  border-radius: 6px;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+
+.register_action button {
+  font-size: 14px;
+  min-height: 44px;
+  max-height: 44px;
+  border-radius: 30px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  margin-bottom: 20px;
+}
+.register_action button:hover {
+  background-color: #8d8888;
+}
+
+.register_login_title {
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.register_login_btn {
+  border-radius: 30px;
+  padding: 5px 25px;
+  background-color: transparent;
+  border: 2px solid black;
+  font-weight: 600;
+}
+.register_login_btn:hover {
+  border: 2px solid #8d8888;
+  color: #8d8888;
+}
+
+/*Create Account*/
+
+/*Get The App*/
+.app_download_section {
+  margin: 15px 80px;
+}
+
+.app_download_breadcrumbs {
+  font-size: 13px;
+  color: #8d8888;
+  display: flex;
+  gap: 10px;
+}
+
+.app_download_title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 13px 0;
+}
+.app_download_heading {
+  font-size: 22px;
+  margin-bottom: 45px;
+}
+
+.feature_block {
+  border: 1px solid black;
+  border-color: rgb(204, 204, 204);
+  border-radius: 4px;
+  padding: 20px 0 0 20px;
+  width: 100%;
+}
+
+.feature_image img {
+  width: 30%;
+}
+
+.feature_content h3 span {
+  font-size: 20px;
+}
+
+.highlight_container {
+  padding: 0 50px;
+}
+
+.highlight_text_block h3 {
+  font-size: 25px;
+}
+
+.highlight_image_block img {
+  width: 80%;
+  margin: 0 100px;
+}
+
+.promo_img {
+  width: 70%;
+}
+
+.promo_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.promo_text {
+  font-size: 15px;
+  margin: 0 20px 0 0;
+}
+
+.demand_text {
+  margin-bottom: 25px;
+}
+
+.card_img img {
+  width: 90%;
+  border-radius: 5px 5px 0 0;
+}
+
+.card_text {
+  line-height: 17px;
+  border: 1px solid #e1d7d7;
+  padding: 20px;
+  width: 90%;
+  border-radius: 0 0 5px 5px;
+}
+
+.card_text h3 span {
+  font-size: 22px;
+}
+
+.store_image {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.store_image img {
+  width: 13%;
+}
+
+.signup_header {
+  font-size: 15px;
+  width: 30%;
+}
+
+.signup_header h1 {
+  font-size: 33px;
+}
+
+.signup_content {
+  background-color: #f0eded;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.input_group {
+  margin-top: 15px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.input_group input {
+  border-radius: 5px;
+  padding: 8px 35px 8px 15px;
+  border: 1px solid #6c6666;
+  outline: none;
+}
+
+.forgot_link {
+  color: rgb(19, 107, 234);
+  cursor: pointer;
+}
+
+.phone_box {
+  margin-top: 25px;
+}
+
+.phone_group {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.phone_group input {
+  outline: none;
+}
+
+.phone_group input {
+  border-radius: 5px;
+  padding: 8px 35px 8px 15px;
+  border: 1px solid #6c6666;
+}
+
+.signup_btn {
+  border-radius: 30px;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.promo_terms {
+  margin-top: 50px;
+}
+/*Get The App*/
+
+/*Footer hiise.Sephora Events*/
+.side_black {
+  background-color: black;
+  padding: 25px;
+}
+
+.center_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 0 0;
+}
+.menu_list a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.menu_list a:hover {
+  color: #cc3333;
+}
+
+.feature_series {
+  text-align: center;
+}
+
+.feature_description {
+  padding: 20px 0;
+}
+
+.feature_title {
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.feature_hashtag {
+  font-size: 20px;
+  color: #cc3333;
+}
+
+.highlighted_events {
+  padding: 10px;
+  background: #cc3333 repeat-x center center;
+  background-size: cover;
+  color: #ffffff;
+  height: 52px;
+  font-size: 20px;
+}
+
+.highlight_title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  line-height: 45px;
+}
+
+.highlight_images {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 35px;
+}
+
+.img1 img {
+  width: 85%;
+}
+.img2 img {
+  width: 20%;
+  margin: 20px;
+}
+
+.highlight_section {
+  display: flex;
+  padding: 0 70px;
+}
+
+.highlight_info {
+  width: 50%;
+}
+
+.event_info {
+  text-align: center;
+}
+
+.event_time {
+  color: red;
+}
+.event_action button {
+  padding: 5px 10px;
+  background-color: #cc3333;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.exclusive_offer {
+  color: #6c6666;
+}
+
+.highlight {
+  background-color: #fae8f0;
+  padding: 30px;
+}
+
+.shop_section {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.shop_section h1 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.image_gallery {
+  text-align: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+.image_gallery img {
+  width: 13%;
+}
+
+.giveaway_rules {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.highlight_text {
+  padding: 30px 0;
+}
+
+.cta_section {
+  text-align: center;
+  font-weight: 300;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.rules_link {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer_wrapper {
+  background-color: black;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 0;
+  color: white;
+}
+
+.event_rsvp_info {
+  margin-bottom: 20px;
+}
+
+.grand_prize_info {
+  font-size: 25px;
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+.contact_info {
+  margin-top: 20px;
+}
+
+.contact_email a {
+  color: white;
+}
+
+.social_icons {
+  font-size: 30px;
+  color: #6c6666;
+}
+
+.footer_logo img {
+  width: 6%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer_copyright {
+  margin-bottom: 20px;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+}
+.footer_links a {
+  color: white;
+}
+
+/*Footer hisse.Sephora Events*/
+
+@media (max-width: 2560px) {
+  .sephora {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+  .left {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .sephora_nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .promo_section {
+    display: flex;
+    gap: 5px;
+  }
+  .hero_section1 img {
+    width: 100%;
+  }
+
+  .versace {
+    display: flex;
+    gap: 5px;
+  }
+
+  .baseComponent {
+    display: flex;
+    gap: 10px;
+  }
+  .shop_button button {
+    padding: 5px 30px;
+  }
+
+  .productList {
+    display: flex;
+    gap: 10px;
+  }
+
+  .product_list {
+    display: flex;
+    gap: 10px;
+  }
+
+  .gift_guide {
+    display: flex;
+    gap: 20px;
+  }
+
+  .rewards_section {
+    display: flex;
+    gap: 15px;
+  }
+
+  .lists {
+    margin: 20px 70px;
+  }
+
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 100px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+  .menu-items {
+    display: flex;
+    gap: 30px;
+  }
+
+  /*Sale & Offers*/
+  .productGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .catalogLayout {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 100px;
+  }
+
+  .filter_item_last {
+    width: 40%;
+  }
+  /*Sale & Offers*/
+
+  /*Services & Events*/
+  .services_section {
+    margin: 25px 95px;
+  }
+
+  .services_banner {
+    display: flex;
+  }
+
+  .services_buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 40px 0;
+  }
+
+  .makeup_section {
+    margin: 25px 95px;
+  }
+
+  .services_image img {
+    width: 100%;
+  }
+
+  .waxing_services_section {
+    margin: 25px 95px;
+  }
+
+  .studio_info {
+    margin: 25px 95px;
+  }
+  /*Services & Events*/
+
+  /*Events*/
+
+  /*Events*/
+
+  /*Beauty Service Faqs*/
+  .info_section {
+    display: flex;
+    gap: 50px;
+  }
+  /*Beauty Service Faqs*/
+
+  /*Get The App*/
+  .add_container {
+    display: flex;
+    gap: 15px;
+  }
+
+  .highlight_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-color: rgb(204, 204, 204);
+    border-radius: 3px;
+    padding: 20px 35px;
+  }
+
+  .promo_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    border: 1px solid #e1d7d7;
+  }
+
+  .demand_card {
+    display: flex;
+  }
+
+  .signup_wrap {
+    display: flex;
+    gap: 25px;
+  }
+  /*Get The App*/
+}
+@media (max-width: 800px) {
+  .sephora {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sephora_nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: white;
+  }
+  .nav_item a {
+    color: black;
+  }
+  .nav_item {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+    flex: 0 0 auto;
+    display: inline-flex;
+    font-size: 12px;
+    min-height: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 1.25;
+    border-radius: 4px;
+    align-items: center;
+  }
+
+  .promo_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+  }
+  .hero_section1 img {
+    width: 200%;
+  }
+  .hero_section1 {
+    width: 50%;
+  }
+  .hero_section2,
+  .hero_section3,
+  .hero_section4 {
+    width: 100%;
+  }
+
+  .versace {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .baseComponent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+  }
+  .shop_button {
+    margin: 5px;
+  }
+  .shop_button button {
+    padding: 5px 15px;
+  }
+
+  .productList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .beauty_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+  }
+
+  .product_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .reward_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5px;
+  }
+
+  .gift_guide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .rewards_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+  }
+
+  .lists {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    margin: 20px 30px;
+  }
+  .footer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    margin: 20px 40px;
+  }
+
+  .menu-items.show {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px 10px 0 10px;
+  }
+
+  .fresnel_container {
+    justify-content: flex-start;
+    gap: 15px;
+    border-bottom: 2px solid #e1e1e1;
+  }
+
+  /*Sale & Offers*/
+  .productGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .catalogLayout {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+  }
+  /*Sale & Offers*/
+
+  /*Services & Events*/
+  .services_banner {
+    display: grid;
+  }
+
+  .services_info {
+    width: 100%;
+  }
+
+  .services_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .waxing_services_section {
+    margin: 10px 20px;
+  }
+
+  .info_sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .event_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /*Services & Events*/
+
+  /*Events*/
+  .events_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .expect_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .more_services_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /*Events*/
+
+  /*Beauty Service Faqs*/
+  /*Beauty Service Faqs*/
+
+  /*Get The App*/
+  .add_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .promo_img {
+    width: 100%;
+  }
+  .promo_text {
+    font-size: 12px;
+  }
+
+  .demand_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .signup_header {
+    width: 100%;
+  }
+  .signup_wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .signup_content {
+    width: 100%;
+  }
+  /*Get The App*/
+}
+
+@media (max-width: 500px) {
+  .text {
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .sephora {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .rigth {
+    justify-content: center;
+  }
+
+  .sephora_nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .promo_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .hero_section1 img {
+    width: 200%;
+  }
+
+  .versace {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+
+  .baseComponent {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+  .shop_button {
+    margin: 5px;
+  }
+  .shop_button button {
+    padding: 5px 15px;
+  }
+
+  .productList {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .beauty_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+  }
+
+  .product_list {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .reward_list {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+  }
+
+  .gift_guide {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .rewards_section {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .footer_section {
+    display: grid;
+    margin: 10px;
+  }
+
+  .lists {
+    margin: 20px 30px;
+  }
+
+  .footer_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    margin: 10px 20px;
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 30px;
+  }
+
+  /*Sale & Offers*/
+  .productGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .catalogLayout {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 30px;
+  }
+  .filter_item_last {
+    width: 100%;
+  }
+  /*Sale & Offers*/
+
+  /*Services & Events*/
+  .services_section {
+    margin: 10px 20px;
+  }
+
+  .services_image img {
+    width: 100%;
+  }
+
+  .services_buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .makeup_section {
+    margin: 10px 20px;
+  }
+
+  .services_list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .brow_card_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .studio_info {
+    margin: 10px 20px;
+  }
+
+  .info_sections {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .event_list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /*Services & Events*/
+
+  /*Events*/
+  .events_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .expect_list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .more_services_list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /*Events*/
+
+  /*Beauty Service Faqs*/
+  .info_section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /*Beauty Service Faqs*/
+
+  /*Get The App*/
+  .add_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .highlight_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .highlight_text_block {
+    text-align: center;
+  }
+  .highlight_image_block img {
+    margin: 0 20px;
+  }
+
+  .promo_box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .promo_img {
+    width: 100%;
+  }
+  .promo_text {
+    padding: 0 5px 15px 15px;
+    width: 100%;
+  }
+
+  .demand_card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .signup_header {
+    width: 80%;
+  }
+  .input_group {
+    display: flex;
+    flex-direction: column;
+  }
+  .phone_group {
+    display: flex;
+    flex-direction: column;
+  }
+  .signup_content {
+    width: 100%;
+  }
+
+  /*Get The App*/
+}

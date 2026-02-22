@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="testTarget">
+            <span class="text">
+                <strong>Choose a FREE makeup trial size*</strong>
+                with $30 spend. *Terms apply. Use code
+                <strong>MAKEUPMUST</strong>
+                ▸
+            </span>
+        </div>
+
+
+        <div class="sephora">
+            <div class="left">
+                <div class="sephora_img">
+                    <p>S E P H O R A</p>
+                </div>
+                <div class="search">
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="search_input">
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+            <div class="fresnel_container1">
+
+                <div class="menu-icon" id="menuIcon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="home">
+                    <ul class="menu-items" id="menuItems">
+
+                        <div class="fresnel_container">
+                            <div class="comment_icon">
+                                <i class="fa-regular fa-comment"></i>
+                            </div>
+                            <div class="chat_news">
+                                <div class="text_chat">
+                                    <span class="chat">AI Beauty</span>
+                                </div>
+                                <div class="news">
+                                    <span>Chat</span>
+                                    <span class="new">NEW</span>
+                                </div>
+                            </div>
+
+                            <div class="hover_box">
+                                <span>Powered by millions of reviews, exclusive product info, and your personal beauty
+                                    preferences.</span>
+                                <button class="start_chat">Start a Chat</button>
+                                <div class="divider2"></div>
+                                <h3 class="try">Try Asking</h3>
+                                <div class="color">Best-selling shampoos and conditioners</div>
+                                <div class="color">Best long-lasting perfumes</div>
+                                <div class="color">Daily routine for normal skin</div>
+                                <div class="color">Moisturizer for oily, acne-prone skin</div>
+                                <div class="color">Body lotion for dry skin</div>
+                            </div>
+                        </div>
+
+                        <div class="fresnel_container">
+                            <div class="shop_icon">
+                                <i class="fa-solid fa-shop"></i>
+                            </div>
+                            <div class="delivery">
+                                <span><b>Shop Store & Delivery</b></span>
+                                <span>Choose your store & location</span>
+                            </div>
+
+                            <div class="hover_box">
+                                <div class="container">
+                                    <div class="shop_section">
+                                        <span><strong>Shop Your Store</strong></span>
+                                        <span>Choose a store to begin.</span>
+                                    </div>
+                                    <div class="button_section">
+                                        <button>Choose Store</button>
+                                    </div>
+                                </div>
+                                <div class="sephora_link">
+                                    <a href="#">Find a Sephora</a>
+                                </div>
+
+                                <div class="divider2"></div>
+
+                                <div class="delivery_container">
+                                    <div class="delivery_section">
+                                        <span><strong>Shop Same-Day Delivery</strong></span>
+                                        <span>Choose a location to begin</span>
+                                    </div>
+                                    <div class="delivery_btn">
+                                        <button>Choose Location</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fresnel_container">
+                            <div class="services_icon">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+                            <div class="event_header">
+                                <span>Services</span></a>
+                                <span>& Events</span></a>
+                            </div>
+
+                            <div class="hover_box">
+                                <div class="services_container">
+                                    <a href="./makeup_services.html">
+                                        <div class="service_item">
+                                            <div class="service_img">
+                                                <img src="./images/flyoutmenu_makeup.svg" alt="">
+                                            </div>
+                                            <div class="service_details">
+                                                <h5>Makeup Services</h5>
+                                                <span>One-on-one makeup application or beauty lesson</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                    <a href="./waxingServices.html">
+                                        <div class="service_item">
+                                            <div class="service_img">
+                                                <img src="./images/flyoutmenu_waxing.svg" alt="">
+                                            </div>
+                                            <div class="service_details">
+                                                <h5>Waxing Services</h5>
+                                                <span>Expert grooming for brows, upper lip, or chin</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <hr>
+                                    <a href="./events.html">
+                                        <div class="service_item">
+                                            <div class="service_img">
+                                                <img src="./images/flyoutmenu_events.svg" alt="">
+                                            </div>
+                                            <div class="service_details">
+                                                <h5>Events</h5>
+                                                <span>Learn about brands, try new products, and more at our in-store
+                                                    events</span>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <div class="divider3"></div>
+
+                                    <div class="additional_links">
+                                        <a href="./myReservations.html">My Reservations</a>
+                                        <span>|</span>
+                                        <a href="./beautyServiceFaqs.html">Beauty Service FAQs</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="fresnel_container">
+                            <div class="pictures">
+                                <img src="./images/images.svg" alt="">
+                            </div>
+                            <div class="sigIn">
+                                <span><b>Sign In</b></span>
+                                <p>for FREE Shipping 🚚</p>
+                            </div>
+
+                            <div class="hover_box">
+                                <div class="welcome_section">
+                                    <div class="intro_section">
+                                        <div class="img_container">
+                                            <img src="./images/images.svg" alt="">
+                                        </div>
+                                        <div class="text_content">
+                                            <h6>New week, new you, Beautiful. 🙌</h6>
+                                            <p>Sign in for <strong>FREE standard shipping</strong> on all
+                                                orders.</p>
+                                        </div>
+                                    </div>
+                                    <div class="auth-box" id="authButtons">
+                                        <button class="btn1"><a href="./signIn.html">Sign In</a></button>
+                                        <button class="btn2"><a href="./createAccount.html">Create Account</a></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="rigth">
+                <div class="loves">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="basket">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sephora_nav">
+            <a href="./new.html">New</a>
+            <a href="./makeup.html">Makeup</a>
+            <a href="./skincare.html">Skincare</a>
+            <a href="./fraqrance.html">Fraqrance</a>
+            <a href="./hair.html">Hair</a>
+            <a href="./toolsBrushes.html">Tool & Brushes</a>
+            <a href="./bathBody.html">Bath & Body</a>
+            <a href="./miniSize.html">Mini Size</a>
+            <a href="./brands.html">Brands</a>
+            <a href="./giftsValueSets.html">Gifts & Value Sets</a>
+            <a href="./giftCard.html">Gift Cards</a>
+            <a href="./saleOffers.html">Sale & Offers</a>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="events_section">
+            <div class="filters_container">
+
+                <span class="breadcrumb_link">Services and Events <i class="fa-solid fa-caret-right"></i></span>
+                <span class="breadcrumb_current">Events</span>
+
+                <p class="filters_title">Filters</p>
+                <div class="filter_section">
+                    <div class="filter_header1">
+                        <h2 class="filter_heading">Category</h2>
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="filter_options">
+                        <div class="filter_option">
+                            <input type="checkbox">
+                            <span>Hair (26)</span>
+                        </div>
+                        <div class="filter_option">
+                            <input type="checkbox">
+                            <span>Makeup (101)</span>
+                        </div>
+                        <div class="filter_option">
+                            <input type="checkbox">
+                            <span>Skincare (73)</span>
+                        </div>
+                        <div class="filter_option">
+                            <input type="checkbox">
+                            <span>Fragrance (34)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="filter_section">
+                    <div class="filter_header2">
+                        <h2 class="filter_heading">Location & Stores</h2>
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="location_header">
+                        <span class="location_zipcode"><strong>94102-2811</strong></span>
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="filter_option">
+                        <input type="checkbox">
+                        <span>POWELL</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="checkbox">
+                        <span>UNION STREET</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="checkbox">
+                        <span>EMBARCADERO</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="checkbox">
+                        <span>STONESTOWN</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="checkbox">
+                        <span>DALY CITY</span>
+
+                        <div class="show_more">
+                            <a href="#">Show more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="filter_section">
+                    <div class="filter_header3">
+                        <h2 class="filter_heading">Date</h2>
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="filter_option">
+                        <input type="radio">
+                        <span><strong>Next 2 months + (Default)</strong></span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="radio">
+                        <span>Next month</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="radio">
+                        <span>Next 2 weeks</span>
+                    </div>
+                    <div class="filter_option">
+                        <input type="radio">
+                        <span>Next 7 days</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="events_container">
+                <div class="events_toolbar">
+                    <span class="event_result_count">1-9 of 218 Results</span>
+                    <span>Sort By: <strong>Closest Distance <i class="fa-solid fa-caret-down"></i></strong></span>
+                </div>
+
+                <div class="events_cards">
+                    <div class="events_card">
+                        <div class="event_card_img">
+                            <img src="./images/experienceimage2xTEST.avif" alt="">
+                        </div>
+                        <div class="event_card_content">
+                            <p>Fragrance</p>
+                            <h2>DOLCE&GABBANA Exclusive In-Store Event</h2>
+                            <div>Discover and try the latest products and trends from your favorite brands at this
+                                exclusive,
+                                open
+                                house event.</div>
+                            <p>Mon, Feb 16, 12:00 PM • Sephora POWELL</p>
+                        </div>
+                    </div>
+
+                    <div class="events_card">
+                        <div class="event_card_img">
+                            <img src="./images/hasm_2025_008520.avif" alt="">
+                        </div>
+                        <div class="event_card_content">
+                            <p>Skincare</p>
+                            <h2>The Better Barrier Event</h2>
+                            <div>Sensitive? Start Superkind. Drop into the Beauty Studio for our ultra-gentle 5-minute
+                                facial. It’s studio-speed care des...</div>
+                            <p>Thu, Feb 19, 11:30 AM • Sephora POWELL <br>
+                                Multiple dates and locations </p>
+                        </div>
+                    </div>
+
+                    <div class="events_card">
+                        <div class="event_card_img">
+                            <img src="./images/OLR-EC__2mCTef1s.avif" alt="">
+                        </div>
+                        <div class="event_card_content">
+                            <p>Makeup</p>
+                            <h2>Anastasia Beverly Hills Exclusive In-Store Event</h2>
+                            <div>Discover and try the latest products and trends from your favorite brands at this
+                                exclusive, open house event.</div>
+                            <p>Thu, Feb 19, 12:00 PM • Sephora POWELL <br>
+                                Multiple dates and locations</p>
+                        </div>
+                    </div>
+
+                    <div class="events_card">
+                        <div class="event_card_img">
+                            <img src="./images/experienceimage2xTEST.avif" alt="">
+                        </div>
+                        <div class="event_card_content">
+                            <p>Hair</p>
+                            <h2>K18 Exclusive In-Store Event</h2>
+                            <div>Refresh, protect, and extend your wash with K18’s biotech-powered haircare. Discover
+                                our
+                                pH-optimized shampoos and condi...</div>
+                            <p>Fri, Feb 20, 12:00 PM • Sephora POWELL <br>
+                                Multiple dates and locations</p>
+                        </div>
+                    </div>
+
+                    <div class="events_card">
+                        <div class="event_card_img">
+                            <img src="./images/hasm_2025_008294.avif" alt="">
+                        </div>
+                        <div class="event_card_content">
+                            <p>Makeup, Fragrance</p>
+                            <h2>Reveal the new Prada Beauty</h2>
+                            <div>Get ready for the big reveal with Prada Beauty! Introducing Prada Conceal, infused with
+                                micro-filter pearls that instan...</div>
+                            <p>Sat, Feb 21, 12:00 PM • Sephora POWELL <br>
+                                Multiple dates and locations</p>
+                        </div>
+                    </div>
+
+                    <div class="events_card">
+                        <div class="event_card_img">
+                            <img src="./images/OLR-EC__O1QrF0bh.avif" alt="">
+                        </div>
+                        <div class="event_card_content">
+                            <p>Skincare</p>
+                            <h2>KIEHL'S SINCE 1851 Exclusive In-Store Event</h2>
+                            <div>Discover and try the latest products and trends from your favorite brands at this
+                                exclusive, open house event.</div>
+                            <p>Fri, Feb 27, 11:00 AM • Sephora POWELL <br>
+                                Multiple dates and locations</p>
+                        </div>
+                    </div>
+
+                    <div class="events_card">
+                        <div class="event_card_img">
+                            <img src="./images/hasm_2025_008437.avif" alt="">
+                        </div>
+                        <div class="event_card_content">
+                            <p>Makeup</p>
+                            <h2>Master the Blur: Givenchy Pressed Powder</h2>
+                            <div>Dive into the couture finish of our Prisme Libre 4-Color Pressed Powder — the ultimate
+                                “make-up bestie” that mattifies, ...</div>
+                            <p>Fri, Feb 27, 12:00 PM • Sephora POWELL <br>
+                                Multiple dates and locations</p>
+                        </div>
+                    </div>
+
+                    <div class="events_card">
+                        <div class="event_card_img">
+                            <img src="./images/hasm_2025_008204.avif" alt="">
+                        </div>
+                        <div class="event_card_content">
+                            <p>Makeup</p>
+                            <h2>Exclusive In-Store Event with Tarte</h2>
+                            <div>Gift the sweetest treat this year with must-haves from tarte! Make holiday shopping a
+                                breeze with limited-edition gift s...</div>
+                            <p>Sat, Feb 28, 10:00 AM • Sephora POWELL <br>
+                                Multiple dates and locations</p>
+                        </div>
+                    </div>
+
+                    <div class="events_card">
+                        <div class="event_card_img">
+                            <img src="./images/hasm_2025_008516.avif" alt="">
+                        </div>
+                        <div class="event_card_content">
+                            <p>Skincare</p>
+                            <h2>DISCOVER YOUR SIGNATURE SCENT</h2>
+                            <div>Experience Salt & Stone’s Santal & Vetiver. Now available in the full range of our
+                                best-selling formulas, experience the...</div>
+                            <p>Sat, Feb 28, 12:00 PM • Sephora POWELL <br>
+                                Multiple dates and locations</p>
+                        </div>
+                    </div>
+
+                    <div class="load_more">
+                        <button>Show more events</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="expect_section">
+            <div class="expect_header">
+                <h2 class="expect_title">What To Expect At Events</h2>
+                <p class="expect_subtitle">Here’s what to expect during Sephora events.</p>
+            </div>
+
+            <div class="expect_list">
+                <div class="expect_content">
+                    <div class="expect_image">
+                        <img src="./images/whattoexpect-events-participants_TestHS.png" alt="">
+                    </div>
+                    <div class="expect_info">
+                        <h2 class="expect_info_title">Participants</h2>
+                        <p class="expect_info_text">Our events typically accommodate 10-30 guests. Guests can RSVP or
+                            walk-in
+                            and attend. No registration
+                            is required. Events can last 1-4 hours. We hope you will join us!</p>
+                    </div>
+                </div>
+
+                <div class="expect_content">
+                    <div class="expect_image">
+                        <img src="./images/whattoexpect-events-cost_TestHS.png" alt="">
+                    </div>
+                    <div class="expect_info">
+                        <h2 class="expect_info_title">Cost</h2>
+                        <p class="expect_info_text">Our events are FREE to our clients! We encourage you to bookmark as
+                            many
+                            events as you want so we can remind you 24 hours before to attend.</p>
+                    </div>
+                </div>
+
+                <div class="expect_content">
+                    <div class="expect_image">
+                        <img src="./images/whattoexpect-events-value_TestHS.png" alt="">
+                    </div>
+                    <div class="expect_info">
+                        <h2 class="expect_info_title">Value</h2>
+                        <p class="expect_info_text">We hope you learn something new by attending our events. We also
+                            provide
+                            incentives and free gifts with purchase if you purchase a product at one of our events.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="more_services">
+            <div class="more_services_header">
+                <h2 class="more_services_title">More Services You Might Like</h2>
+                <span class="more_services_viewall"><a href="#">View all</a></span>
+            </div>
+
+            <div class="more_services_list">
+                <div class="more_services_card">
+                    <div class="service_card_top">
+                        <p class="service_category">Makeup</p>
+                        <h2 class="service_name">Full Face</h2>
+                    </div>
+                    <div class="service_card_body">
+                        <div class="card_img_wrapper">
+                            <img src="./images/fullfacemakeup_60min.webp" alt="">
+                        </div>
+                        <div class="card_text_block">
+                            <p class="card_description">Get a full look, like no-makeup makeup or everyday glam.</p>
+                            <p class="card_duration_price"><strong>$60</strong> / 60 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more_services_card">
+                    <div class="service_card_top">
+                        <p class="service_category">Waxing</p>
+                        <h2 class="service_name">Brow Wax</h2>
+                    </div>
+                    <div class="service_card_body">
+                        <div class="card_img_wrapper">
+                            <img src="./images/waxingbrow.avif" alt="">
+                        </div>
+                        <div class="card_text_block">
+                            <p class="card_description">Get your brows expertly shaped by a licensed Beauty Advisor.</p>
+                            <p class="card_duration_price"><strong>$22</strong> / 20 min</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more_services_card">
+                    <div class="service_card_top">
+                        <p class="service_category">Makeup</p>
+                        <h2 class="service_name">Feature Focus</h2>
+                    </div>
+                    <div class="service_card_body">
+                        <div class="card_img_wrapper">
+                            <img src="./images/feature_focus_hero_2025.avif" alt="">
+                        </div>
+                        <div class="card_text_block">
+                            <p class="card_description">Spotlight eyes, lips, or complexion, like a cat eye or
+                                contouring.
+                            </p>
+                            <p class="card_duration_price"><strong>$30</strong> / 30 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section>
+            <p>* Gift with purchase available while supplies last. Purchase requirements vary by brand, one offer per
+                person. Not redeemable for cash or credit. Available in select Sephora freestanding and US stores
+                only.</p>
+            <p>Get ready to have a blast with Sephora’s in-store events! Whether you’re flying solo or tagging along
+                with
+                friends, you’re on your way to learning about the most up-to-date makeup trends and beauty launches.
+                Events
+                vary greatly based on location and availability, so keep your eyes on the Happening @ page for the
+                following: </p>
+            <span class="more"><a href="#">Show more</a></span>
+        </section>
+    </main>
+
+
+    <footer class="site_footer">
+        <div class="website">
+            <h5>Website feedback? Let us know ▸</h5>
+        </div>
+
+        <div class="footer_container">
+            <div class="find_store">
+                <div class="store_icon">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <div class="texts">
+                    <span>Find a Store</span>
+                    <span>Choose Your Store</span>
+                </div>
+            </div>
+
+            <div class="find_store">
+                <div class="store_icon">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+                <div class="texts">
+                    <span>Customer Service Chat</span>
+                </div>
+            </div>
+
+            <div class="find_store">
+                <div class="store_icon">
+                    <i class="fa-solid fa-barcode"></i>
+                </div>
+                <div class="texts">
+                    <span>Get the App</span>
+                    <span>Download Now</span>
+                </div>
+            </div>
+
+            <div class="find_store">
+                <div class="store_icon">
+                    <i class="fa-solid fa-mobile"></i>
+                </div>
+                <div class="texts">
+                    <span>Get Sephora Texts</span>
+                    <span>Sign up Now</span>
+                </div>
+            </div>
+
+            <div class="find_store">
+                <div class="store_icon">
+                    <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <div class="texts">
+                    <span>Sephora Credit Card Program</span>
+                    <span>Want 25 % off your Sephora purchase<sup>1</sup>? <span>DETAILS</span></span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer_divider">
+
+        <div class="lists">
+            <div class="about">
+                <h2>About Sephora</h2>
+                <ul>
+                    <li>About Sephora</li>
+                    <li>Newsroom</li>
+                    <li>Careers</li>
+                    <li>Sephora Values</li>
+                    <li>Supply Chain Transparency</li>
+                    <li>Affiliates</li>
+                    <li><a href="./sephoraEvents.html">Sephora Events</a></li>
+                    <li>Gift Cards</li>
+                    <li>Sephora Global Sites</li>
+                    <li>Diversity, Equity & Inclusion</li>
+                    <li>Sephora Accelerate</li>
+                    <li>Beauty (Re)Purposed</li>
+                    <li>Report a Vulnerability</li>
+                </ul>
+            </div>
+
+            <div class="my_sephora">
+                <h2>My Sephora</h2>
+                <ul>
+                    <li>Beauty Insider</li>
+                    <li>Sephora Credit Card</li>
+                    <li>Community Profile</li>
+                    <li>Order Status</li>
+                    <li>Purchase History</li>
+                    <li>Account Settings</li>
+                    <li>Beauty Services & Store Events</li>
+                    <li>Auto-Replenish</li>
+                    <li>Beauty Offers</li>
+                    <li>Rewards Bazaar</li>
+                    <li>Loves</li>
+                    <li>Shop Your Store</li>
+                    <li>Shop Same-Day Delivery</li>
+                </ul>
+            </div>
+
+            <div class="help">
+                <h2>Help</h2>
+                <ul>
+                    <li>Customer Service</li>
+                    <li>Returns & Exchanges</li>
+                    <li>Delivery and Pickup Options</li>
+                    <li>Shipping</li>
+                    <li>Billing</li>
+                    <li>International Shipments</li>
+                    <li>Buying Guides</li>
+                    <li>Beauty Services FAQ</li>
+                    <li>Sephora at Kohl's</li>
+                    <li>Store Locations</li>
+                    <li>Flexible Payments</li>
+                    <li>Accessibility</li>
+                    <li>Teen Skincare Resource</li>
+                </ul>
+            </div>
+
+            <div class="language">
+                <h2>Region & Language</h2>
+                <div class="language_option">
+                    <div class="united_img">
+                        <img src="./images/us.svg" alt="">
+                    </div>
+                    <div class="language_selector">
+                        <span>United States - English</span>
+                    </div>
+                </div>
+                <div class="language_option">
+                    <div class="canada_img">
+                        <img src="./images/ca.svg" alt="">
+                    </div>
+                    <div class="language_selector">
+                        <span>Canada - English</span>
+                    </div>
+                </div>
+                <div class="language_option">
+                    <div class="flag_icon">
+                        <img src="./images/ca.svg" alt="">
+                    </div>
+                    <div class="language_selector">
+                        <span>Canada - Français</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand_tagline">
+                <div class="section_title">
+                    <div class="title_part">
+                        <h2>We Belong to</h2>
+                    </div>
+                    <div class="title_part">
+                        <h2>Something Beautiful</h2>
+                    </div>
+                </div>
+
+                <div class="register">
+                    <div class="text_input">
+                        <div class="signUp">
+                            <label for="">Sign me up for texts from Sephora</label>
+                            <input type="text" placeholder="Mobile Phone Number">
+                        </div>
+                        <div class="btn_continue">
+                            <button>Continue</button>
+                        </div>
+                    </div>
+                    <div class="text_input">
+                        <div class="signUp">
+                            <label for="">Sign up for Sephora Emails</label>
+                            <input type="text" placeholder="Enter your email address">
+                        </div>
+                        <div class="btn_signUp">
+                            <button>Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer_divider">
+
+        <div class="footer_section">
+            <div class="footer_legal_section">
+                <p>© 2026 Sephora USA, Inc. All rights reserved.</p>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Your Privacy Choices</a>
+                <img src="./images/opt-out.svg" alt="">
+                <p>1-877-737-4672</p>
+            </div>
+
+            <div class="footer_social_links">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-solid fa-x"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-snapchat"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
