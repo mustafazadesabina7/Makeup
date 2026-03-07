@@ -263,6 +263,9 @@
 .breadcrumb_link:hover {
   text-decoration: underline;
 }
+.breadcrumb_link i {
+  font-size: 10px;
+}
 
 .breadcrumb_current {
   font-size: 14px;
@@ -316,7 +319,7 @@
 }
 
 .events_container {
-  width: 80%;
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -484,6 +487,19 @@
   color: #8d8888;
   font-size: 13px;
 }
+.catagory_list i {
+  font-size: 10px;
+}
+.catagory_list a {
+  text-decoration: none;
+  color: #8d8888;
+}
+.catagory_list a:hover {
+  text-decoration: underline;
+}
+.faq_section_subtitle {
+  color: black;
+}
 
 .content_area {
   margin-top: 20px;
@@ -557,7 +573,6 @@
 
 .intro_section {
   display: flex;
-
   gap: 25px;
 }
 
@@ -566,18 +581,6 @@
 }
 
 /*Sign In*/
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 50px;
-  right: 0;
-  width: 220px;
-  background-color: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 5px 15px pink;
-  border-radius: 5px;
-  padding: 12px;
-}
 .previously {
   text-align: center;
 }
@@ -587,7 +590,24 @@
 
 .rigth {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon_box .dropdown {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  transform: translateX(-100%);
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 12px;
+  right: 0;
+  width: 350px;
+  z-index: 100;
 }
 
 .icon_box {
@@ -603,7 +623,7 @@
 }
 
 .loves i,
-.basket  {
+.basket {
   font-size: 25px;
   padding: 10px;
   transition: 0.3s;
@@ -652,17 +672,17 @@
   display: none;
   position: absolute;
   top: 100%;
+  left: 0;
+  right: 0;
   background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 1200px;
   padding: 20px;
-
   z-index: 1;
 }
+
 .dropdown_content {
   display: flex;
-
-
 }
 .newness_column {
   width: 25%;
@@ -732,14 +752,14 @@
   width: 100%;
 }
 
-.hero_section4 {
+/* .hero_section4 {
   width: 65%;
   background-color: rgb(0, 150, 184);
   border-radius: 5px;
 }
 .hero_section4 img {
   width: 100%;
-}
+} */
 
 section {
   margin: 45px 80px;
@@ -900,12 +920,6 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-}
-
-.promo_img img {
-  border-radius: 5px 5px 0 0;
-  height: 220px;
-  object-fit: cover;
 }
 
 .promo_images {
@@ -1723,6 +1737,20 @@ body {
   display: flex;
   gap: 10px;
 }
+.app_download_breadcrumbs i {
+  font-size: 10px;
+}
+.app_download_breadcrumbs a {
+  text-decoration: none;
+  color: #8d8888;
+}
+.app_download_breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.app_download_current {
+  color: #000000;
+}
 
 .app_download_title {
   text-align: center;
@@ -1769,12 +1797,13 @@ body {
 }
 
 .promo_img {
-  width: 70%;
+  width: 100%;
 }
 
 .promo_img img {
   width: 100%;
-  height: 100%;
+  border-radius: 5px 5px 0 0;
+  height: 220px;
 }
 
 .promo_text {
@@ -1881,6 +1910,12 @@ body {
 /*Get The App*/
 
 /*Footer hiise.Sephora Events*/
+.header_containers {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .side_black {
   background-color: black;
   padding: 25px;
@@ -1891,11 +1926,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
+  background-color: white;
 }
 
 .menu_list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 25px;
   padding: 10px 0 0;
@@ -1951,6 +1986,10 @@ body {
   margin-top: 35px;
 }
 
+.highlight_image img {
+  width: 100%;
+}
+
 .img1 img {
   width: 85%;
 }
@@ -1961,7 +2000,7 @@ body {
 
 .highlight_section {
   display: flex;
-  padding: 0 70px;
+  padding: 0 50px;
 }
 
 .highlight_info {
@@ -2091,7 +2130,433 @@ body {
   color: white;
 }
 
+.nav_menu {
+  display: block;
+}
+
+.event_registration {
+  background-image: url("./images/bg_stripes_2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.attend_info,
+.confirmation_info {
+  padding: 20px;
+  border: 10px color(display-p3 0.737 0.251 0.227) solid;
+  max-width: 950px;
+  width: 90%;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.attend_info {
+  margin-bottom: 20px;
+}
+
+.info_block {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.attend_info p strong,
+.confirmation_info p strong {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /*Footer hisse.Sephora Events*/
+
+/*Footer Get Sephora Texts*/
+.dropdown_link_item {
+  font-size: 13px;
+  color: #6c6666;
+  text-decoration: none;
+}
+.dropdown_link_item:hover {
+  text-decoration: underline;
+}
+.dropdown_link_item i {
+  font-size: 10px;
+}
+
+.dropdown_link_item1 {
+  font-size: 14px;
+}
+
+.drops {
+  width: 70%;
+  font-size: 20px;
+}
+
+.sms_signup {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sms_legal {
+  width: 30%;
+}
+
+.sms_form {
+  width: 70%;
+  background-color: rgb(246, 246, 248);
+  padding: 20px;
+}
+
+.form_step_signin {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_fields_signin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form_fields_signin input {
+  padding: 5px 50px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #8d8888;
+}
+
+.forgot {
+  color: rgb(47, 103, 235);
+  cursor: pointer;
+}
+
+.form_fields_phone {
+  margin-top: 20px;
+}
+
+.form_fields_phone input {
+  padding: 5px 50px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #8d8888;
+}
+
+.form_fields_phone button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.form_fields_phone button:hover {
+  background-color: #6c6666;
+}
+/*Footer Get Sephora Texts*/
+
+/*Header hisse All New*/
+.new_label {
+  font-size: 13px;
+}
+
+.new_text {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.new_items {
+  line-height: 30px;
+}
+
+.filters_section {
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+.filters_label {
+  color: #6c6666;
+  font-size: 13px;
+}
+
+.filters_title {
+  display: flex;
+  gap: 30px;
+}
+
+.store_delivery_section {
+  display: flex;
+  gap: 75px;
+}
+
+.icons i {
+  color: #3e3d3d;
+}
+
+.new_arrivals_section {
+  display: flex;
+  gap: 30px;
+}
+
+.product_collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product_image_container img {
+  width: 80%;
+}
+
+.load_more_section button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: transparent;
+}
+.load_more_section button:hover {
+  border: 1px solid 6c6666;
+  color: #6c6666;
+}
+
+.load_more_section {
+  margin: 100px 0;
+}
+
+.shipping_option {
+  display: flex;
+  gap: 10px;
+}
+
+.catagory_lists ul {
+  padding-left: 0;
+}
+.catagory_lists ul li {
+  list-style: none;
+}
+.just {
+  text-decoration: none;
+  color: black;
+}
+/*Header hisse All New*/
+
+/*Header All Gift Cards*/
+.gifcards {
+  margin-top: 13px;
+}
+
+.giftcards__breadcrumbs a {
+  color: #8d8888;
+  text-decoration: none;
+  font-size: 13px;
+}
+.giftcards__breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.giftcards__breadcrumbs a i {
+  font-size: 10px;
+}
+
+.giftcards__current {
+  font-size: 13px;
+}
+
+.giftcards__header {
+  background-color: rgb(251, 241, 239);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.giftcards__header h4 {
+  text-align: center;
+  padding: 15px;
+}
+
+.giftcards__menu h6 {
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  flex-shrink: 0;
+  padding: 20px 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.featured_giftcards_title {
+  font-size: 22px;
+}
+
+.featured_giftcards_grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.featured_giftcards_grid img {
+  width: 23%;
+}
+
+.most_loved_list {
+  display: flex;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.most_loved_list img {
+  width: 23%;
+}
+
+.most_loved {
+  margin: 60px 0;
+}
+
+.physical_giftcards_list {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.physical_giftcards_image-wrapper img {
+  width: 100%;
+}
+
+.physical_giftcards_info {
+  padding: 0 10px;
+}
+
+.physical_giftcards_item {
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  padding: 12px;
+}
+
+.balance_check_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance_check_text div {
+  font-size: 15px;
+}
+.balance_check_text p {
+  font-size: 13px;
+}
+
+.balance_check_form {
+  display: flex;
+  gap: 13px;
+}
+
+.balance_check_form input {
+  padding: 7px 85px 7px 10px;
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+.balance_check_button {
+  margin-top: 15px;
+}
+
+.balance_check_button button {
+  font-size: 14px;
+  min-height: 44px;
+  max-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  border-color: transparent;
+  text-align: center;
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding: 0 80px;
+  margin: 20px 0;
+}
+.balance_check_button button:hover {
+  background-color: #6c6666;
+}
+
+.balance_check_footer p {
+  font-size: 13px;
+}
+
+.balance_check {
+  background-color: rgb(246, 246, 248);
+  padding: 20px;
+  max-width: 612px;
+}
+
+.redeem_picks_grid {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.redeem_picks_image-wrapper img {
+  width: 100%;
+}
+.redeem_picks_image-wrapper {
+  margin: 20px 0;
+}
+
+.redeem_picks_item {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+  padding: 12px;
+}
+
+.corporate_giftcards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(251, 240, 238);
+}
+
+.corporate_giftcards_text {
+  padding: 50px;
+}
+
+.corporate_giftcards_text h3 {
+  font-size: 20px;
+}
+
+.corporate_benefit {
+  display: flex;
+  gap: 20px;
+}
+
+.corporate_benefits_grid {
+  border: 1px solid rgb(201, 195, 195);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.corporate_benefit_icon_wrapper {
+  margin-top: 20px;
+}
+.corporate_benefit_icon_wrapper h3 {
+  font-size: 22px;
+}
+
+.kohls_giftcards {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  background-color: rgb(251, 240, 238);
+}
+
+.faq_section_content {
+  background-color: rgb(251, 240, 238);
+  padding: 15px 30px;
+}
+
+.giftcards_info {
+  margin-top: 20px;
+  font-size: 15px;
+}
+/*Header All Gift Cards*/
 
 @media (max-width: 2560px) {
   .sephora {
@@ -2145,6 +2610,7 @@ body {
   .gift_guide {
     display: flex;
     gap: 20px;
+    overflow-x: auto;
   }
 
   .rewards_section {
@@ -2163,9 +2629,6 @@ body {
     margin: 50px 100px;
   }
 
-  .menu-icon {
-    display: none;
-  }
   .menu-items {
     display: flex;
     gap: 30px;
@@ -2266,12 +2729,53 @@ body {
     gap: 25px;
   }
   /*Get The App*/
+
+  /*Footer hissede Sephora events*/
+  .menu-icon i {
+    display: none;
+  }
+  /*Footer hissede Sephora events*/
+
+  /*Footer Get Sephora Texts*/
+  .dropdown_promo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: rgb(195, 215, 239);
+  }
+
+  .new_arrivals {
+    width: 20%;
+  }
+  .product_collection {
+    width: 70%;
+  }
+  /*Footer Get Sephora Texts*/
+
+  /*Header All Gift Cards*/
+  .giftcards__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    gap: 10px;
+    margin-top: 50px;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .kohls_giftcards_image_wrapper img,
+  .corporate_giftcards_image_wrapper img {
+    width: 100%;
+  }
+
+  /*Header All Gift Cards*/
 }
+
 @media (max-width: 800px) {
   .sephora {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
+    row-gap: 10px;
     display: flex;
     flex-direction: column;
   }
@@ -2286,6 +2790,7 @@ body {
     justify-content: space-between;
     gap: 15px;
     background-color: white;
+    overflow-x: scroll;
   }
   .nav_item a {
     color: black;
@@ -2339,6 +2844,13 @@ body {
     padding: 5px 15px;
   }
 
+  .new_arrivals {
+    width: 100%;
+  }
+  .product_collection {
+    width: 100%;
+  }
+
   .productList {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -2388,25 +2900,6 @@ body {
     margin: 20px 40px;
   }
 
-  .menu-items.show {
-    display: none;
-  }
-  .menu-icon {
-    display: block;
-  }
-
-  .menu-items {
-    flex-direction: column;
-    border: 1px solid black;
-    padding: 20px 10px 0 10px;
-  }
-
-  .fresnel_container {
-    justify-content: flex-start;
-    gap: 15px;
-    border-bottom: 2px solid #e1e1e1;
-  }
-
   /*Sale & Offers*/
   .productGrid {
     display: grid;
@@ -2454,6 +2947,10 @@ body {
   /*Services & Events*/
 
   /*Events*/
+  .filters_container {
+    width: 40%;
+  }
+
   .events_cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2471,6 +2968,9 @@ body {
   /*Events*/
 
   /*Beauty Service Faqs*/
+  .info_container {
+    width: 50%;
+  }
   /*Beauty Service Faqs*/
 
   /*Get The App*/
@@ -2479,9 +2979,6 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .promo_img {
-    width: 100%;
-  }
   .promo_text {
     font-size: 12px;
   }
@@ -2502,6 +2999,201 @@ body {
     width: 100%;
   }
   /*Get The App*/
+
+  /*Footer hissede Sephora events*/
+  .logo img {
+    margin-bottom: 50px;
+  }
+
+  .menu_list {
+    margin-top: 50px;
+    display: flex;
+    gap: 18px;
+  }
+
+  .load_more {
+    font-size: 15px;
+  }
+
+  .highlight_section {
+    padding: 0 10px;
+  }
+  /*Footer hissede Sephora events*/
+
+  /*Footer Get Sephora Texts*/
+  .sms_signup {
+    margin: 20px;
+  }
+
+  .promo-text {
+    padding: 10px 20px;
+  }
+
+  .promo-text h3 {
+    font-size: 20px;
+  }
+
+  .promo-title img {
+    width: 135%;
+  }
+
+  .drops {
+    font-size: 13px;
+  }
+
+  .form_fields_signin {
+    display: flex;
+    gap: 5px;
+  }
+
+  .form_fields_signin input {
+    padding: 5px;
+  }
+
+  .form_fields_phone button {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .form_fields_phone {
+    display: flex;
+    gap: 5px;
+  }
+
+  .form_fields_phone input {
+    padding: 5px;
+  }
+
+  .promo_offer {
+    margin: 20px;
+  }
+  /*Footer Get Sephora Texts*/
+
+  /*Header hisse All New*/
+  .new_arrivals_section {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .catagory_lists ul {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  .just {
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+    font-size: 12px;
+    min-height: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    align-items: center;
+  }
+
+  .store_delivery_section,
+  .filters_label,
+  .shipping_option input,
+  .delete {
+    display: none;
+  }
+
+  .shipping_option1 {
+    display: flex;
+  }
+
+  .option_details {
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 32px;
+    border-radius: 30px;
+  }
+
+  .product_collection {
+    width: 100%;
+  }
+
+  .related {
+    margin: 15px;
+  }
+  /*Header hisse All New*/
+
+  /*Header All Gift Cards*/
+  .gifcards,
+  .featured_giftcards,
+  .physical-giftcards,
+  .balance_check,
+  .redeem_picks,
+  .corporate_giftcards,
+  .corporate_benefit,
+  .kohls_giftcards,
+  .faq_section {
+    margin: 10px 20px;
+  }
+
+  .giftcards__menu {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .featured_giftcards_grid img {
+    width: 25%;
+    overflow-x: scroll;
+  }
+
+  .most_loved_list img {
+    width: 50%;
+  }
+  .most_loved_list {
+    overflow-x: auto;
+  }
+
+  .physical_giftcards_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .redeem_picks_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .corporate_giftcards_image_wrapper img {
+    width: 100%;
+  }
+
+  .corporate_giftcards_text {
+    padding: 20px 70px;
+  }
+  .corporate_giftcards_text h3,
+  h4 {
+    font-size: 13px;
+  }
+
+  .corporate_benefit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kohls_giftcards_image_wrapper img {
+    width: 100%;
+  }
+
+  .kohls_giftcards_text h5 {
+    font-size: 14px;
+  }
+  /*Header All Gift Cards*/
 }
 
 @media (max-width: 500px) {
@@ -2575,6 +3267,13 @@ body {
     row-gap: 10px;
   }
 
+  .product_card {
+    width: 100%;
+  }
+  .product_img {
+    width: 80%;
+  }
+
   .reward_list {
     display: grid;
     grid-template-columns: 1fr;
@@ -2612,7 +3311,24 @@ body {
   .menu-items {
     display: flex;
     flex-direction: column;
-    margin: 5px 30px;
+    gap: 12px;
+    padding: 0 10px;
+  }
+
+  .fresnel_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .chat_news,
+  .event_header,
+  .sigIn {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
   }
 
   /*Sale & Offers*/
@@ -2700,6 +3416,14 @@ body {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .info_container {
+    width: 100%;
+  }
+
+  .beauty_services_faqs {
+    width: 100%;
+  }
   /*Beauty Service Faqs*/
 
   /*Get The App*/
@@ -2724,9 +3448,6 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .promo_img {
-    width: 100%;
-  }
   .promo_text {
     padding: 0 5px 15px 15px;
     width: 100%;
@@ -2751,6 +3472,234 @@ body {
   .signup_content {
     width: 100%;
   }
-
   /*Get The App*/
+
+  /*Footer hisse.Sephora Events*/
+  .header_containers {
+    position: static;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+
+  .menu-icon i {
+    display: block;
+    font-size: 20px;
+  }
+
+  .nav_menu {
+    display: none;
+    width: 100%;
+    background: black;
+    text-align: center;
+  }
+
+  .nav_menu.active {
+    display: block;
+  }
+
+  .menu_list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .menu_list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+  }
+
+  .menu_list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .events_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filters_container {
+    width: 100%;
+  }
+
+  .highlight_title {
+    font-size: 24px;
+  }
+
+  .highlight_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img1 img {
+    width: 200%;
+  }
+
+  .img2 img {
+    width: 60%;
+  }
+
+  .highlight_info {
+    width: 100%;
+  }
+
+  .signup_btn {
+    padding: 3px;
+  }
+
+  .store_image img {
+    width: 35%;
+  }
+  /*Footer hisse.Sephora Events*/
+
+  /*Footer Get Sephora Texts*/
+  .advertisement {
+    margin: 10px 5px;
+  }
+
+  .form_fields_signin {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .forgot {
+    margin-left: 210px;
+  }
+
+  .form_fields_phone {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo-title img {
+    width: 100%;
+  }
+
+  .sms_signup {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sms_legal {
+    width: 100%;
+  }
+
+  .sms_form {
+    width: 100%;
+  }
+
+  .dropdown_promo {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Footer Get Sephora Texts*/
+
+  /*Header hisse All New*/
+  .catagory_lists ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .product_collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .shipping_option {
+    display: flex;
+  }
+
+  .load_more_section {
+    margin: 20px 0 20px 0;
+    font-size: 13px;
+  }
+
+  .related {
+    margin: 15px;
+  }
+
+  .option_details {
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+    display: inline-flex;
+    padding: 5px 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 30px;
+  }
+
+  .just {
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
+    font-size: 12px;
+    min-height: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    align-items: center;
+  }
+
+  .new_arrivals {
+    width: 100%;
+  }
+
+  .product_collection {
+    width: 100%;
+  }
+  /*Header hisse All New*/
+
+  /*Header All Gift Cards*/
+  .physical_giftcards_list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .balance_check_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .redeem_picks_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .corporate_giftcards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .corporate_benefit {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .kohls_giftcards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .kohls_giftcards_image_wrapper img {
+    width: 100%;
+  }
+
+  .kohls_giftcards_text {
+    padding: 0 20px;
+  }
+  /*Header All Gift Cards*/
 }

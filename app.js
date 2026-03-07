@@ -1,11 +1,4 @@
-/*1.Sephora header hisse*/
-const menuIcon = document.getElementById("menuIcon");
-const menuItems = document.getElementById("menuItems");
-menuIcon.addEventListener("click", () => {
-  menuItems.classList.toggle("show");
-});
-
-/*2.All Beauty Chat New, Shop Store & Delivery, Services & Events, Sign In (siçanla üzərinə gəldikdə qutunun açılıb-bağlanması)*/
+/*1.All Beauty Chat New, Shop Store & Delivery, Services & Events, Sign In (siçanla üzərinə gəldikdə qutunun açılıb-bağlanması)*/
 const containers = document.querySelectorAll(".fresnel_container");
 
 containers.forEach((container) => {
@@ -20,7 +13,7 @@ containers.forEach((container) => {
   });
 });
 
-/*3.Header hissede urek ikonu ile sebet ikonun uzerine gelende acilmasi ve rengin deyismesi*/
+/*2.Header hissede urek ikonu ile sebet ikonun uzerine gelende acilmasi ve rengin deyismesi*/
 const iconBoxe = document.querySelectorAll(".icon_box");
 iconBoxe.forEach((iconBoxe) => {
   const icon = iconBoxe.querySelector(".loves i");
@@ -39,7 +32,7 @@ iconBoxe.forEach((iconBoxe) => {
   });
 });
 
-/*4.Arxa fonu qara rengli header hissesi*/
+/*3.Arxa fonu qara rengli header hissesi*/
 const navItems = document.querySelectorAll(".nav_item");
 
 navItems.forEach((item) => {
@@ -54,7 +47,7 @@ navItems.forEach((item) => {
   });
 });
 
-/*5.Sort by: Relevance main hisse*/
+/*4.Sort by: Relevance main hisse*/
 document.addEventListener("DOMContentLoaded", function () {
   const wrapper = document.getElementById("sortWrapper");
   const btn = document.getElementById("sortBtn");
@@ -80,4 +73,12 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("click", function () {
     wrapper.classList.remove("active");
   });
+});
+
+/* 5. Footer hisse.Sephora Events*/
+const menuIcon = document.getElementById("menuIcon");
+const navMenu = document.querySelector(".nav_menu");
+
+menuIcon.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
 });

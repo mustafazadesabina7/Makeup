@@ -1133,249 +1133,808 @@
     </header>
 
 
+
     <main>
-        <section class="services_section">
-            <h1 class="services_title">Services and Events at Sephora</h1>
-            <div class="services_banner">
-                <div class="services_image">
-                    <img src="./images/08-2025-services-refresh-site-d-h-at-mktg-banner-3132-image-only.avif" alt="">
+        <div class="page">
+            <div class="sort-wrapper" id="sortWrapper">
+                <div class="results-count">
+                    <p>172 Results</p>
                 </div>
-                <div class="services_info">
-                    <span><strong>Sephora Beauty Services</strong></span>
-                    <span>The look you want, done by a licensed professional. </span>
-                    <span><strong>BOOK NOW ▸ </strong></span>
+                <button class="sort-btn" id="sortBtn" type="button">
+                    <span>Sort by: <strong id="selectedSort">Relevance</strong></span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+
+                <ul class="sort-dropdown" id="sortDropdown">
+                    <li data-value="Relevance"><strong>Relevance (Default)</strong></li>
+                    <li data-value="Bestselling">Bestselling</li>
+                    <li data-value="Top Rated">Top Rated</li>
+                    <li data-value="Price Low to High">Price Low to High</li>
+                    <li data-value="Price High to Low">Price High to Low</li>
+                    <li data-value="New">New</li>
+                </ul>
+            </div>
+        </div>
+        <section class="catalogLayout">
+            <div class="filter_item_last">
+                <div class="left_text1">
+                    <h1>Sale</h1>
+                    <div>Makeup (103)</div>
+                    <div>Skincare (46)</div>
+                    <div>Gifts (43)</div>
+                    <div>Mini Size (13)</div>
+                    <div>Bath & Body (10)</div>
+                    <div>Men (14)</div>
+                    <div>Hair (21)</div>
+                    <div>Clean at Sephora (54)</div>
+                    <div>Luxury Beauty (8)</div>
+                    <div>Tools & Brushes (12)</div>
+                    <div>Fragrance (7)</div>
+                </div>
+
+                <div class="left_text2">
+                    <h2>Filters</h2>
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div>In Store & Delivery</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div>Price Range</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Brand</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Rating</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Coverage</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Hair Texture</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Formulation</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Age Range</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Ingredient Preferences</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Hair Concerns</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Skin Type</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Skin Concerns</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Shopping Preferences</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Hair Type</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Benefits</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Finish</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Color Family</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Fragrance Type</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Fragrance Family</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Size</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Sale</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <div class="filter_item">
+                        <div class="filter_header">
+                            <div> Sun Protections</div>
+                        </div>
+                        <div class="filter_icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="services_buttons">
-                <button class="btn">Makeup</button>
-                <button class="btn">Waxing</button>
-                <button class="btn">Events</button>
+
+
+
+            <div class="productGrid">
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2887404-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Kiehl's Since 1851</h6>
+                        <span>Ultra Hydration Duo Gift Set</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>21</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red"><strong>$29.25</strong></span>
+                            <span class="del">$39.00</span>
+                            <span>($65.00 value)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2804458-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Fenty Beauty by Rihanna</h6>
+                        <span>Fenty Cheeks Suede Waterproof Powder Blush</span>
+                        <span>3 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>699</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red"><strong>$14.00</strong></span>
+                            <span class="del">$28.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2814333-main-zoom.avif" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>OLEHENRIKSEN</h6>
+                        <span>Pout Preserve Hydrating Peptide Lip Treatment</span>
+                        <span>4 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>2.7K</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$16.10</span>
+                            <span class="del">$23.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2426930-main-zoom.avif" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>ONE/SIZE by Patrick Starrr</h6>
+                        <span>Turn Up The Base Versatile Powder Foundation</span>
+                        <span>32 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>805</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$19.00</span>
+                            <span class="del">$38.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2904563-main-zoom.avif" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Touchland</h6>
+                        <span>Power Mist Hydrating Hand Sanitizer</span>
+                        <span>32 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>2.6K</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$9.60</span>
+                            <span class="del">$12.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2801199-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>ONE/SIZE by Patrick Starrr</h6>
+                        <span>Turn Up the Base Full Beat Waterproof Liquid Foundation</span>
+                        <span>38 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>690</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$22.00</span>
+                            <span class="del">$44.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2867794-main-zoom.jpg" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>SEPHORA COLLECTION</h6>
+                        <span>Body Mask for Chest and Bum</span>
+                        <span>38 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>33</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$3.50</span>
+                            <span class="del">$7.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2908978-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>K18 Biomimetic Hairscience</h6>
+                        <span>Clean Streak Minis Hair Gift Set</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>47</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$28.00</span>
+                            <span class="del">$40.00</span>
+                            <span>($52.00 value)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2666956-main-zoom.avif" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>SEPHORA COLLECTION</h6>
+                        <span>Matte Velvet Lipstick</span>
+                        <span>4 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>445</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$8.40</span>
+                            <span class="del">$16.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2711265-main-zoom.avif" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>SEPHORA COLLECTION</h6>
+                        <span>Sephora Colorful® Contour Matte Powder</span>
+                        <span>4 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>350</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$8.40</span>
+                            <span class="del">$8.40</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2564540-main-zoom.avif" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>SEPHORA COLLECTION</h6>
+                        <span>Satin Hydrating Lipstick</span>
+                        <span>2 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>350</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$8.00</span>
+                            <span class="del">$16.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2905685-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Peter Thomas Roth</h6>
+                        <span>24K Gold 2-Piece Mini Brightening & Anti-Aging Skincare Set</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>11</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$27.30</span>
+                            <span class="del">$39.00</span>
+                            <span>($83.00 value)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2496099-main-zoom.avif" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>SEPHORA COLLECTION</h6>
+                        <span>Sephora Colorful® Blush</span>
+                        <span>5 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>635</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$7.00</span>
+                            <span class="del">$14.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2895001-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>LAWLESS</h6>
+                        <span>Forget The Filler Lip Plumper Line Smoothing Gloss</span>
+                        <span>2 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>2.4K</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$18.20</span>
+                            <span class="del">$26.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2368223-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>SEPHORA COLLECTION</h6>
+                        <span>Resurfacing Peel Mask</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>391</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$9.00</span>
+                            <span class="del">$18.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2735827-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Freck Beauty</h6>
+                        <span>MAKEOUT CLUB Nude Muse Lip Liner</span>
+                        <span>6 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>278</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$12.60</span>
+                            <span class="del">$18.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2899672-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Peter Thomas Roth</h6>
+                        <span>Mini-Size Day & Night Cloud Creams 2-Piece Moisturizer Gift Set</span>
+                        <span>6 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>10</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$19.60</span>
+                            <span class="del">$28.00</span>
+                            <span>($48.00 value)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2887412-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Kiehl's Since 1851</h6>
+                        <span>Yuletide Glow Skincare Gift Set</span>
+                        <span>6 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>2</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$66.75</span>
+                            <span class="del">$89.00</span>
+                            <span>($143.00 value)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2648236-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>ONE/SIZE by Patrick Starrr</h6>
+                        <span>Lip Snatcher Waterproof Precision Lip Liner</span>
+                        <span>6 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>428</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$7.00</span>
+                            <span class="del">$14.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2910636-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Dr. Jart+</h6>
+                        <span>Vital Hydra Solution™ Jelly Bear Lip Mask with Hyaluronic Acid</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>159</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$15.00</span>
+                            <span class="del">$25.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2268522-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Fenty Beauty by Rihanna</h6>
+                        <span>Brow MVP Ultra Fine Brow Pencil & Styler</span>
+                        <span>4 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>1.1K</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$12.50</span>
+                            <span class="del">$25.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2902906-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Valentino</h6>
+                        <span>Puffer Complex™ Lip Plumper Gloss Gift Set</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>159</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$45.00</span>
+                            <span class="del">$60.00</span>
+                            <span>($76.00 value)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2531762-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Peace Out</h6>
+                        <span>Retinol Face Stick</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>159</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$18.00</span>
+                            <span class="del">$36.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_container">
+                    <div class="product_image">
+                        <img src="./images/s2361483-main-zoom.webp" alt="">
+                    </div>
+                    <div class="product_details">
+                        <h6>Rare Beauty by Selena Gomez</h6>
+                        <span>Liquid Touch Weightless Foundation</span>
+                        <span>9 Colors</span>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>5.9K</span>
+                        </div>
+                        <div class="product_price">
+                            <span class="price_red">$15.00</span>
+                            <span class="del">$30.00</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-
-        <section class="makeup_section">
-            <h2 class="services_subtitle"><strong>Makeup</strong></h2>
-            <span class="services_description">All makeup services are performed by a licensed or makeup-certified
-                Beauty
-                Advisor.</span>
-            <div class="services_list">
-                <div class="service_card">
-                    <div class="service_image">
-                        <img src="./images/fullfacemakeup_60min.webp" alt="">
-                    </div>
-                    <div class="service_details">
-                        <h2><strong>Full Face</strong></h2>
-                        <span>Get a full look, like no-makeup makeup or everyday glam.</span>
-                        <p><strong>$60</strong> / 60 min</p>
-                    </div>
-                </div>
-
-                <div class="service_card">
-                    <div class="service_image">
-                        <img src="./images/feature_focus_hero_2025.avif" alt="">
-                    </div>
-                    <div class="service_details">
-                        <h2><strong>Feature Focus</strong></h2>
-                        <span>Spotlight eyes, lips, or complexion, like a cat eye or contouring.</span>
-                        <p><strong>$30</strong> / 30 min</p>
-                    </div>
-                </div>
-
-                <div class="service_card">
-                    <div class="service_image">
-                        <img src="./images/lashapplication_15min.avif" alt="">
-                    </div>
-                    <div class="service_details">
-                        <h2><strong>Lash Application</strong></h2>
-                        <p>New strip lashes must be purchased separately at Sephora.*</p>
-
-                        <p> *All makeup services and beauty lessons include lash application with...</p>
-                        <p><strong>$15</strong> / 15 min</p>
-                    </div>
-                </div>
-
-                <div class="service_card">
-                    <div class="service_image">
-                        <img src="./images/beautylesson.webp" alt="">
-                    </div>
-                    <div class="service_details">
-                        <h2><strong>Beauty Lesson</strong></h2>
-                        <span>Learn makeup and skincare tips, one-on-one.</span>
-                        <p><strong>$75</strong> / 75 min</p>
-                    </div>
-                </div>
-
-                <div class="service_card">
-                    <div class="service_image">
-                        <img src="./images/specialoccassion_90min.webp" alt="">
-                    </div>
-                    <div class="service_details">
-                        <h2><strong>Special Occasion</strong></h2>
-                        <span>Go all out for your big events, a.k.a. camera-ready.</span>
-                        <p><strong>$90</strong> / 90 min</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider"></div>
-
-        <section class="waxing_services_section">
-            <h2 class="services_subtitle"><strong>Waxing</strong></h2>
-            <span class="services_description">All waxing services are performed by a licensed Beauty Advisor.</span>
-
-            <div class="brow_card_container">
-                <div class="brow_card">
-                    <div class="brow_image">
-                        <img src="./images/waxingbrow.avif" alt="">
-                    </div>
-                    <div class="brow_info">
-                        <h2><strong>Brow Wax</strong></h2>
-                        <span>Get your brows expertly shaped by a licensed Beauty Advisor.</span>
-                        <p><strong>$22</strong> / 20 min</p>
-                    </div>
-                </div>
-
-                <div class="brow_card">
-                    <div class="brow_image">
-                        <img src="./images/waxingduo.webp" alt="">
-                    </div>
-                    <div class="brow_info">
-                        <h2><strong>Duo Wax: Brow & Lip</strong></h2>
-                        <span>Get custom brow-mapping and shaping with an upper-lip wax performed by a licensed Beauty
-                            Advisor.</span>
-                        <p><strong>$30</strong> / 30 min</p>
-                    </div>
-                </div>
-
-                <div class="brow_card">
-                    <div class="brow_image">
-                        <img src="./images/waxingtrio.jpg" alt="">
-                    </div>
-                    <div class="brow_info">
-                        <h2><strong>Trio Wax: Brow, Lip & Chin</strong></h2>
-                        <span>Custom brow-mapping and shaping, plus upper-lip and chin wax, all performed by a licensed
-                            Beauty Advisor.</span>
-                        <p><strong>$40</strong> / 30 min</p>
-                    </div>
-                </div>
-
-                <div class="brow_card">
-                    <div class="brow_image">
-                        <img src="./images/liporchin.jpg" alt="">
-                    </div>
-                    <div class="brow_info">
-                        <h2><strong>Lip or Chin Wax</strong></h2>
-                        <span>Get a silky-smooth upper lip or chin during this session performed by a licensed Beauty
-                            Advisor.</span>
-                        <p><strong>$13</strong> / 10 min</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider"></div>
-
-        <section class="studio_info">
-            <h2 class="services_subtitle"><strong>What to Expect at the Beauty Studio</strong></h2>
-            <span class="services_description">Here’s what you need to know before your Beauty Service. More questions?
-                <a href="#">View our Beauty
-                    Services FAQs</a></span>
-
-            <div class="info_sections">
-                <div class="arrival_info">
-                    <div class="arrival-image">
-                        <img src="./images/arrival-services.png" alt="">
-                    </div>
-                    <div class="arrival-details">
-                        <h2>Arrival</h2>
-                        <p>Please arrive with makeup-free skin (preferred but not required). Change of plans? If you
-                            need to
-                            cancel or reschedule, please do so at least 24 hours in advance.</p>
-                    </div>
-                </div>
-
-                <div class="arrival_info">
-                    <div class="arrival-image">
-                        <img src="./images/waiver-services.png" alt="">
-                    </div>
-                    <div class="arrival-details">
-                        <h2>Waiver</h2>
-                        <p>Upon check-in, you'll be asked to review and sign a digital Waiver of Rights and Assumption
-                            of
-                            Risk. Minors will need a guardian present to sign the waiver.</p>
-                    </div>
-                </div>
-
-                <div class="arrival_info">
-                    <div class="arrival-image">
-                        <img src="./images/giftcard-services.png" alt="">
-                    </div>
-                    <div class="arrival-details">
-                        <h2>Gift Card Redemption</h2>
-                        <p>If you have a gift card, you can redeem in store at time of payment. Please note that a
-                            personal
-                            credit card is required to book a reservation.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider"></div>
-
-        <section>
-            <div class="offers">
-                <h2 class="services_subtitle"><strong>More Events You Might Like</strong></h2>
-                <span class="view">View all</span>
-            </div>
-
-            <div class="event_list">
-                <div class="event_card">
-                    <div class="event_image">
-                        <img src="./images/hasm_2025_008470.jpg" alt="">
-                    </div>
-                    <div class="event_details">
-                        <p>Makeup</p>
-                        <h2><strong>RUNWAY-READY SECRETS</strong></h2>
-                        <p>Put to the ultimate test under runway lights and long photoshoot days. Join Pat McGrath Labs
-                            in-store and experience bac...</p>
-                        <p>Fri, Feb 13, 12:00 PM • Sephora POWELL </p>
-                        <p>Multiple dates and locations</p>
-                    </div>
-                </div>
-
-                <div class="event_card">
-                    <div class="event_image">
-                        <img src="./images/experienceimage2xTEST.avif" alt="">
-                    </div>
-                    <div class="event_details">
-                        <p>Makeup</p>
-                        <h2><strong>MERIT Exclusive In-Store Event</strong></h2>
-                        <p>Discover and try the latest products and trends from your favorite brands at this exclusive,
-                            open
-                            house event.</p>
-                        <p>Sat, Feb 14, 12:00 PM • Sephora POWELL </p>
-                        <p>Multiple dates and locations</p>
-                    </div>
-                </div>
-
-                <div class="event_card">
-                    <div class="event_image">
-                        <img src="./images/hasm_2025_008507.avif" alt="">
-                    </div>
-                    <div class="event_details">
-                        <p>Skincare</p>
-                        <h2><strong>Exclusive In-Store Event with Fresh</strong></h2>
-                        <p>Discover and try the latest products and trends from your favorite brands at this exclusive,
-                            open
-                            house event.</p>
-                        <p>Sat, Feb 14, 12:00 PM • Sephora POWELL </p>
-                        <p>Multiple dates and locations</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="results_info">
+            <p>1-60 of 164 Results</p>
+            <button><strong>Show More Products</strong></button>
+        </div>
     </main>
 
 
@@ -1582,6 +2141,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="./app.js"></script>
+
 </body>
 
 </html>
