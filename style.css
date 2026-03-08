@@ -1522,6 +1522,8 @@ body {
 
 .info_sections {
   margin: 20px 0;
+  display: flex;
+  gap: 20px;
 }
 
 .arrival-image img {
@@ -2303,6 +2305,10 @@ body {
   width: 80%;
 }
 
+.product_image img {
+  width: 50%;
+}
+
 .load_more_section button {
   padding: 10px 30px;
   border-radius: 30px;
@@ -2573,7 +2579,7 @@ body {
   .sephora_nav {
     display: flex;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 10px 42px;
   }
 
   .promo_section {
@@ -2610,7 +2616,6 @@ body {
   .gift_guide {
     display: flex;
     gap: 20px;
-    overflow-x: auto;
   }
 
   .rewards_section {
@@ -2730,6 +2735,10 @@ body {
   }
   /*Get The App*/
 
+  .promo_card {
+    width: 33%;
+  }
+
   /*Footer hissede Sephora events*/
   .menu-icon i {
     display: none;
@@ -2774,6 +2783,10 @@ body {
 }
 
 @media (max-width: 800px) {
+  .promo_card {
+    width: 100%;
+  }
+
   .sephora {
     row-gap: 10px;
     display: flex;
@@ -2791,6 +2804,7 @@ body {
     gap: 15px;
     background-color: white;
     overflow-x: scroll;
+    padding: 10px;
   }
   .nav_item a {
     color: black;
@@ -2809,16 +2823,25 @@ body {
     align-items: center;
   }
 
-  .promo_section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
+  .promo_section .hero_section1,
+  .hero_section2,
+  .hero_section3 {
+    flex: 0 0 60%;
   }
+
+  .promo_section {
+    overflow-x: auto;
+  }
+
+  .info_section {
+    margin: 20px;
+  }
+
   .hero_section1 img {
-    width: 200%;
+    width: 100%;
   }
   .hero_section1 {
-    width: 50%;
+    width: 100%;
   }
   .hero_section2,
   .hero_section3,
@@ -2826,17 +2849,42 @@ body {
     width: 100%;
   }
 
+  .chosen_products_section {
+    margin: 50px 20px;
+  }
+
   .versace {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
+    overflow-x: auto;
+  }
+
+  .versace_img {
+    flex: 0 0 23%;
+  }
+
+  .versace_img img {
+    width: 100%;
+  }
+
+  .product_container {
+    margin: 0 100px;
+  }
+
+  .product_showcase {
+    margin: 50px 20px;
   }
 
   .baseComponent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 15px;
+    overflow-x: auto;
   }
+
+  .component {
+    flex: 0 0 calc(33.33% - 14px);
+  }
+
+  .arrival-image img {
+    width: 25%;
+  }
+
   .shop_button {
     margin: 5px;
   }
@@ -2851,16 +2899,39 @@ body {
     width: 100%;
   }
 
+  .value_sets_section {
+    margin: 50px 20px;
+  }
+
+  .list {
+    flex: 0 0 160px;
+  }
+
   .productList {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 10px;
+    overflow-x: auto;
+  }
+
+  .marketing_section {
+    margin: 50px 20px;
+  }
+
+  .promo_card {
   }
 
   .beauty_section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 5px;
+  }
+
+  .latest_products {
+    margin: 50px 20px;
+  }
+
+  .events_section,
+  .expect_section,
+  .more_services,
+  .bonus_gift {
+    margin: 20px;
   }
 
   .product_list {
@@ -2870,21 +2941,40 @@ body {
   }
 
   .reward_list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 5px;
+    overflow-x: auto;
   }
 
-  .gift_guide {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 10px;
+  .image_container img {
+    width: 100%;
+  }
+
+  .beauty_rewards {
+    margin: 50px 20px;
+  }
+
+  .beauty_rewards .product_reward {
+    flex: 0 0 23%;
+  }
+
+  .gift_guidance {
+    margin: 50px 20px;
+  }
+
+  .guidance_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rewards_slider {
+    margin: 50px 20px;
   }
 
   .rewards_section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
+    overflow-x: auto;
+  }
+
+  .rewards_slider .rewards_banner {
+    flex: 0 0 55%;
   }
 
   .lists {
@@ -2898,6 +2988,16 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 15px;
     margin: 20px 40px;
+  }
+
+  .footer_section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 35px 0;
+  }
+
+  .footer_divider {
+    margin: 0 20px;
   }
 
   /*Sale & Offers*/
@@ -2940,9 +3040,19 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
+  .upcoming_events .event_card {
+    flex: 0 0 55%;
+  }
+
   .event_list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    overflow-x: auto;
+  }
+
+  .services_section,
+  .makeup_section,
+  .studio_info,
+  .upcoming_events {
+    margin: 20px;
   }
   /*Services & Events*/
 
@@ -2997,6 +3107,15 @@ body {
   }
   .signup_content {
     width: 100%;
+  }
+
+  .app_download_section,
+  .scan_app_highlight,
+  .app_promo,
+  .beauty_demand,
+  .text_signup,
+  .advertisement {
+    margin: 20px;
   }
   /*Get The App*/
 
@@ -3159,14 +3278,20 @@ body {
     overflow-x: auto;
   }
 
+  .physical_giftcards_list .physical_giftcards_item {
+    flex: 0 0 35%;
+  }
+
   .physical_giftcards_list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    overflow-x: auto;
+  }
+
+  .redeem_picks_grid .redeem_picks_item {
+    flex: 0 0 25%;
   }
 
   .redeem_picks_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    overflow-x: auto;
   }
 
   .corporate_giftcards_image_wrapper img {
@@ -3181,11 +3306,6 @@ body {
     font-size: 13px;
   }
 
-  .corporate_benefit {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .kohls_giftcards_image_wrapper img {
     width: 100%;
   }
@@ -3197,6 +3317,10 @@ body {
 }
 
 @media (max-width: 500px) {
+  .promo_card {
+    width: 100%;
+  }
+
   .text {
     flex-direction: column;
     font-size: 14px;
@@ -3222,25 +3346,16 @@ body {
     gap: 15px;
   }
 
-  .promo_section {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
-  }
-  .hero_section1 img {
-    width: 200%;
+  .versace_img {
+    flex: 0 0 160px;
   }
 
-  .versace {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 15px;
+  .versace_img img {
+    width: 100%;
   }
 
-  .baseComponent {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 15px;
+  .component {
+    flex: 0 0 calc(60.33% - 14px);
   }
   .shop_button {
     margin: 5px;
@@ -3249,22 +3364,11 @@ body {
     padding: 5px 15px;
   }
 
-  .productList {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
+  .promo_card {
   }
 
-  .beauty_section {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 5px;
-  }
-
-  .product_list {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
+  .arrival-image img {
+    width: 19%;
   }
 
   .product_card {
@@ -3274,22 +3378,13 @@ body {
     width: 80%;
   }
 
-  .reward_list {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 5px;
-  }
-
   .gift_guide {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
+    display: flex;
+    overflow-x: auto;
   }
 
-  .rewards_section {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
+  .rewards_slider .rewards_banner {
+    flex: 0 0 85%;
   }
 
   .footer_section {
@@ -3308,11 +3403,32 @@ body {
     margin: 10px 20px;
   }
 
+  .footer_section {
+    margin: 10px 20px;
+  }
+
   .menu-items {
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding: 0 10px;
+  }
+
+  .beauty_rewards .product_reward {
+    flex: 0 0 33%;
+  }
+
+  .accsess {
+    font-size: 11px;
+  }
+
+  .gift_guide .gift_item {
+    flex: 0 0 20%;
+  }
+
+    .beauty_section {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .fresnel_container {
@@ -3384,11 +3500,6 @@ body {
   }
 
   .info_sections {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .event_list {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -3664,19 +3775,14 @@ body {
   /*Header hisse All New*/
 
   /*Header All Gift Cards*/
-  .physical_giftcards_list {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 
   .balance_check_form {
     display: flex;
     flex-direction: column;
   }
 
-  .redeem_picks_grid {
-    display: grid;
-    grid-template-columns: 1fr;
+  .redeem_picks_grid .redeem_picks_item {
+    flex: 0 0 35%;
   }
 
   .corporate_giftcards {
