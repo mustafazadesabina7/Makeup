@@ -237,7 +237,7 @@
 
         <div class="sephora_nav">
             <div class="nav_item">
-                <a href="./new.html">New</a>
+                <a href="./allNew.html">New</a>
 
                 <div class="dropdown1">
                     <div class="dropdown_content">
@@ -1065,7 +1065,7 @@
             </div>
 
             <div class="nav_item">
-                <a href="./giftCard.html">Gift Cards</a>
+                <a href="./allGiftCards.html">Gift Cards</a>
 
                 <div class="dropdown1">
                     <div class="dropdown_content">
@@ -1094,7 +1094,7 @@
             </div>
 
             <div class="nav_item">
-                <a href="#">Sale & Offers</a>
+                <a href="./allSale.html">Sale & Offers</a>
 
                 <div class="dropdown1">
                     <div class="dropdown_content">
@@ -1131,25 +1131,28 @@
             </div>
         </div>
     </header>
-    
+
     <main>
         <section class="auth_section">
             <div class="auth_container">
-                <form action="">
+                <form id="registrationForm">
                     <h2 class="form_title">Sign In</h2>
                     <p class="form_description">Sign in or create an account to enjoy <strong>FREE standard
                             shipping</strong> on all orders.</p>
 
                     <div class="loginForm">
-                        <input type="text" placeholder="Email Address">
-                        <input type="password" placeholder="Password">
+                        <input type="text" id="emailInput" placeholder="Email Address">
+                        <span id="emailError"></span>
+                        <input type="password" id="passwordInput" placeholder="Password">
+                        <span id="passwordError"></span>
                     </div>
 
                     <div class="loginOptions">
                         <div class="remember-wrapper">
-                            <input type="checkbox" class="remember_checkbox">
+                            <input type="checkbox" id="checkbox" class="remember_checkbox">
                             <span class="remember_text">Keep me signed in</span>
                         </div>
+                        <span id="checkboxError"></span>
                         <div class="forgot_password">
                             <a href="#"> Forgot password?</a>
                         </div>
@@ -1158,7 +1161,8 @@
                     <p class="terms_text">By clicking “Sign In”, you (1) agree to the current version of our <a
                             href="#">TERMS OF USE</a> , and
                         (2) have read Sephora’s <a href="#">Privacy Policy</a></p>
-                    <button class="primaryBtn">Sign In</button>
+                    <button type="submit" class="primaryBtn">Sign In</button>
+                    <p id="successMessage"></p>
                 </form>
 
                 <div class="divider1"></div>

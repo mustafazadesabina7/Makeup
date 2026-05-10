@@ -82,3 +82,66 @@ const navMenu = document.querySelector(".nav_menu");
 menuIcon.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
+
+// 6*. Header, Events hisse.
+// const filter_header1 = document.querySelector(".filter_header1");
+// const filter_options = document.querySelector(".filter_options");
+
+// filter_header1.addEventListener("click", () => {
+//   filter_options.classList.toggle("active");
+// });
+
+// // 7*.Sign in
+// const registrationForm = document.getElementById("registrationForm");
+
+// registrationForm.addEventListener("submit", function (e) {
+//   e.preventDefault();
+//   validateForm();
+// });
+
+// function validateForm() {
+//   let errors = {};
+
+//   const email = document.getElementById("emailInput").value.trim();
+//   const password = document.getElementById("passwordInput").value.trim();
+//   const checkbox = document.getElementById("checkbox").checked;
+
+//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//   if (!emailRegex.test(email)) {
+//     errors.emailInput = "Düzgün email daxil edin";
+//   }
+
+//   const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+//   if (!passwordRegex.test(password)) {
+//     errors.passwordInput =
+//       "Minimum 8 simvol, ən azı 1 böyük hərf, 1 rəqəm olmalıdır";
+//   }
+
+//   if (!checkbox) {
+//     errors.checkbox = "Keep me signed in seçilməlidir";
+//   }
+
+//   showErrors(errors);
+
+//   if (Object.keys(errors).length === 0) {
+//     submitForm();
+//   }
+
+//   function showErrors(errors) {
+//     document
+//       .querySelectorAll("span")
+//       .forEach((error) => (error.innerText = ""));
+//     for (let key in errors) {
+//       let errorElement = document.getElementById(key + "Error");
+//       if (errorElement) {
+//         errorElement.innerText = errors[key];
+//       }
+//     }
+//   }
+
+//   function submitForm() {
+//     document.getElementById("successMessage").innerText =
+//       "Qeydiyyat uğurla tamamlandı";
+//     document.getElementById("registrationForm").reset();
+//   }
+// }

@@ -1927,7 +1927,7 @@ body {
 .center_content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   padding: 0 25px;
   background-color: white;
 }
@@ -2562,6 +2562,13 @@ body {
   font-size: 15px;
 }
 
+.filter_options {
+  display: none;
+}
+.filter_options.active {
+  display: block;
+}
+
 @media (max-width: 2560px) {
   .sephora {
     display: flex;
@@ -3045,6 +3052,10 @@ body {
 }
 
 @media (max-width: 800px) {
+  .corporate_benefit_icon_wrapper img {
+    width: 75%;
+  }
+
   .product_card {
     width: 205%;
   }
@@ -3922,7 +3933,8 @@ body {
   .menu-icon {
     display: block;
     position: absolute;
-    right: 0;
+    right: 30px;
+    top: 60px;
   }
 
   .menu-icon i {
@@ -4199,5 +4211,9 @@ body {
 
   .image_gallery img {
     width: 19%;
+  }
+
+  .corporate_benefit_icon_wrapper img {
+    width: 75%;
   }
 }
