@@ -2645,7 +2645,7 @@ body {
 }
 
 #hr5 {
-  margin: 0 80px;
+  margin: 0 75px;
   border: 1px solid rgb(225, 224, 224);
 }
 
@@ -3267,11 +3267,11 @@ body {
 }
 
 .payment_banner_image img {
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 5px 0 0;
 }
 
 .payment_banner_content {
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 0 5px 5px;
 }
 
 @media (max-width: 2560px) {
@@ -3828,6 +3828,10 @@ body {
 
   .beauty_demand_grid {
     overflow-x: auto;
+  }
+
+  #hr5 {
+    margin: 0 20px;
   }
 }
 
@@ -5160,7 +5164,7 @@ body {
   }
 
   .breadcrumb span {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .payment_banner_content h1 {
@@ -5206,5 +5210,13 @@ body {
 
   .legal_info_section {
     font-size: 14px;
+  }
+
+  .payment_banner_content {
+    padding: 31px;
+  }
+
+  #hr5 {
+    margin: 0 20px;
   }
 }
