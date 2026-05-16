@@ -3865,7 +3865,6 @@ body {
     padding: 66px;
   }
 
-  
   .beauty_products,
   .beauty_demand_section,
   #line1,
@@ -3873,7 +3872,8 @@ body {
     margin: 20px 25px;
   }
 
-  .payment_guide, .buying_guide {
+  .payment_guide,
+  .buying_guide {
     margin: 20px 15px;
   }
 
@@ -3923,11 +3923,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-.help_topic_group {
-      display: grid;
+  .help_topic_group {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
-}
+  }
 }
 
 @media (max-width: 800px) {
@@ -4618,7 +4618,7 @@ body {
 
   .left {
     display: flex;
-    gap: 10px;
+    gap: 5px;
   }
   .rigth {
     justify-content: center;
@@ -5239,17 +5239,16 @@ body {
   }
 
   .help_links_list2 {
-            display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
-    .help_links_list0 {
-            display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
+  .help_links_list0 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
-  
 
   .main_section {
     display: grid;
