@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -2733,7 +2735,7 @@ body {
 .help_links_list0 {
   display: grid;
   grid-template-columns: repeat(3, max-content);
-  gap: 200px;
+  gap: 185px;
 }
 
 .help_links_list1 {
@@ -2762,10 +2764,11 @@ body {
   gap: 40px;
   margin: 15px 80px;
   width: 94%;
+  font-family: "Inter", sans-serif;
 }
 
 .page_name {
-  font-size: 13px;
+  font-size: 12px;
   padding: 8px;
 }
 
@@ -2773,6 +2776,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   margin-top: 13px;
+  color: black;
 }
 
 .cat_box a {
@@ -2780,9 +2784,19 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
+  font-size: 14px;
 }
 .cat_box a:hover {
   text-decoration: underline;
+}
+
+.filter_item1 a {
+  line-height: 1.6;
+}
+
+.filter_item1 i {
+  font-size: 14px;
+  margin-top: 7px;
 }
 
 .filter_box {
@@ -2807,7 +2821,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  width: 80%;
+  width: 100%;
   margin-bottom: 7px;
 }
 
@@ -2858,6 +2872,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .search_box i {
@@ -2867,8 +2882,8 @@ body {
 }
 
 .search_box input {
-  width: 72%;
-  padding: 5px 10px 5px 35px;
+  width: 80%;
+  padding: 3px 10px 3px 35px;
   border: 1px solid #938989;
   outline: none;
   border-radius: 30px;
@@ -2882,6 +2897,10 @@ body {
 .rating_item {
   display: flex;
   gap: 5px;
+}
+
+.rating_item i {
+  font-size: 14px;
 }
 
 #show_more {
@@ -2932,15 +2951,12 @@ body {
   overflow-y: auto;
   max-height: 490px;
   padding-left: 6px;
+  line-height: 1.9;
 }
 
 .radio_item {
   display: flex;
   gap: 10px;
-}
-
-.main_section {
-  display: flex;
 }
 
 .product_labels {
@@ -2977,6 +2993,7 @@ body {
 
 .tag_text {
   font-weight: 500;
+  font-size: 13px;
 }
 
 .tag_icon {
@@ -2992,7 +3009,7 @@ body {
 }
 
 .results_count {
-  margin-top: 20px;
+  margin-top: 5px;
   color: #6c6666;
   font-size: 15px;
 }
@@ -3014,12 +3031,15 @@ body {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  margin-top: 20px;
+  font-size: 15px;
 }
 
 .product_list1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
+  margin-top: 20px;
 }
 
 .item_stars span {
@@ -3029,6 +3049,19 @@ body {
 .item_info h6 {
   font-size: 14px;
   font-weight: bold;
+}
+
+.item_info {
+  font-size: 14px;
+}
+
+.item_stars i {
+  font-size: 13px;
+  color: black;
+}
+
+.item_stars span {
+  color: black;
 }
 
 .payment_guide {
@@ -3140,7 +3173,6 @@ body {
   width: 212px;
   display: flex;
   font-size: 14px;
-  line-height: 1.25;
   background-color: rgb(255, 255, 255);
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 6px;
@@ -3222,7 +3254,17 @@ body {
 .beauty_demand_card_image img {
   width: 100%;
   border-radius: 5px 5px 0 0;
-  height: 180px;
+}
+
+.beauty_demand_card_image1 img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.beauty_demand_card1 {
+  width: 265px;
+  display: flex;
+  flex-direction: column;
 }
 
 .beauty_demand_card_content span {
@@ -3267,11 +3309,11 @@ body {
 }
 
 .payment_banner_image img {
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 0 0 5px;
 }
 
 .payment_banner_content {
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 5px 5px 0;
 }
 
 @media (max-width: 2560px) {
@@ -3528,20 +3570,22 @@ body {
 
   .left {
     display: flex;
+    gap: 15px;
   }
 
   .search {
-    padding: 5px 0 5px 5px;
+    padding: 5px 0 5px 3px;
     width: 40%;
   }
 
   .sephora_img p {
-    width: 135%;
+    width: 110%;
   }
 
   .menu-items {
     display: flex;
     gap: 10px;
+    margin-bottom: 5px;
   }
 
   .info_section {
@@ -3568,7 +3612,7 @@ body {
   }
 
   .sephora_nav {
-    padding: 10px 15px;
+    padding: 10px 5px;
   }
 
   .chosen_products_section,
@@ -3774,6 +3818,10 @@ body {
     width: 18%;
   }
 
+  .popular_topic_text {
+    font-size: 13px;
+  }
+
   .help_links_list0 {
     gap: 108px;
   }
@@ -3797,7 +3845,7 @@ body {
   }
 
   .item_image img {
-    width: 80%;
+    width: 95%;
   }
 
   .payment_banner {
@@ -3814,16 +3862,19 @@ body {
   }
 
   .payment_banner_content {
-    padding: 64px;
+    padding: 66px;
   }
 
-  .payment_guide,
-  .buying_guide,
+  
   .beauty_products,
   .beauty_demand_section,
   #line1,
   .legal_info_section {
     margin: 20px 25px;
+  }
+
+  .payment_guide, .buying_guide {
+    margin: 20px 15px;
   }
 
   .beauty_demand_grid {
@@ -3833,6 +3884,50 @@ body {
   #hr5 {
     margin: 0 20px;
   }
+
+  .sephora {
+    gap: 0;
+  }
+
+  .fresnel_container {
+    gap: 8px;
+  }
+
+  .beauty_products_grid {
+    overflow-x: auto;
+  }
+
+  .beauty_demand strong {
+    font-size: 20px;
+  }
+
+  .beauty_demand p {
+    font-size: 15px;
+  }
+
+  .legal_info_section {
+    font-size: 15px;
+  }
+
+  .help_topics_section {
+    font-size: 15px;
+  }
+
+  .results_header {
+    width: 100%;
+  }
+
+  .product_tags {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.help_topic_group {
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
 }
 
 @media (max-width: 800px) {
@@ -3881,7 +3976,7 @@ body {
   .left {
     display: flex;
 
-    gap: 10px;
+    gap: 5px;
   }
 
   .menu-items {
@@ -4413,7 +4508,7 @@ body {
   }
 
   .customer_service_text {
-    width: 50%;
+    width: 52%;
   }
 
   .customer_service_image img {
@@ -4439,7 +4534,7 @@ body {
   }
 
   .sponsored_image img {
-    width: 95%;
+    width: 100%;
   }
 
   .tag_item {
@@ -4447,21 +4542,63 @@ body {
   }
 
   .cat_box {
-    width: 120%;
+    width: 98%;
   }
 
   .payment_banner_content {
-    padding: 28px;
+    padding: 33px;
+  }
+
+  .payment_banner_content h1 {
+    font-size: 23px;
+  }
+
+  .payment_banner_content p {
+    font-size: 17px;
   }
 
   .beauty_products_grid {
     display: flex;
     gap: 15px;
-    overflow-x: auto;
   }
 
   .product_card1 {
     flex: 0 0 190px;
+  }
+
+  .product_list1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main_section {
+    display: flex;
+    margin: 0;
+    gap: 15px;
+  }
+
+  .item_image img {
+    width: 70%;
+  }
+
+  .results_header {
+    font-size: 14px;
+  }
+
+  .help_topics_section {
+    font-size: 14px;
+  }
+
+  .help_topics_section h3 h4 {
+    font-size: 12px;
+  }
+
+  .help_related_section {
+    font-size: 14px;
+  }
+
+  .options_header h3 {
+    font-size: 18px;
   }
 }
 
@@ -4485,11 +4622,13 @@ body {
   }
   .rigth {
     justify-content: center;
+    margin-left: 10px;
   }
 
   .search_input input {
     padding: 5px 29px 5px 34px;
-    width: 120%;
+    width: 155%;
+    font-size: 14px;
   }
 
   .fresnel_container1 {
@@ -5072,7 +5211,7 @@ body {
   }
 
   .popular_topic_icon img {
-    width: 14%;
+    width: 15%;
   }
 
   .chat_container {
@@ -5099,14 +5238,28 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .help_links_list2 {
+            display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+  }
+
+    .help_links_list0 {
+            display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+  }
+  
+
   .main_section {
     display: grid;
     grid-template-columns: 1fr;
-    width: 80%;
+    margin: 10px 15px;
+    width: 92%;
   }
 
   .color_item img {
-    width: 6%;
+    width: 8%;
   }
 
   .product_tags {
@@ -5116,26 +5269,29 @@ body {
   }
 
   .sponsored_image img {
-    width: 135%;
+    width: 100%;
   }
 
   .product_list1 {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 135%;
-    margin-top: 13px;
+    width: 100%;
+
+    gap: 10px;
+  }
+
+  .item_info,
+  .item_info h6 {
+    width: 140%;
+    font-size: 12px;
   }
 
   .item_info {
-    width: 150%;
+    width: 148%;
   }
 
   .results_header {
-    font-size: 15px;
-  }
-
-  .results_header {
-    width: 125%;
+    font-size: 13px;
+    width: 95%;
   }
 
   .item_image {
@@ -5143,11 +5299,15 @@ body {
   }
 
   .sort_by {
-    margin-top: 15px;
+    margin-top: 5px;
+  }
+
+  .item_card {
+    width: 50%;
   }
 
   .item_inner {
-    width: 70%;
+    width: 100%;
   }
 
   .product_tags {
@@ -5218,5 +5378,57 @@ body {
 
   #hr5 {
     margin: 0 20px;
+  }
+
+  .cat_box {
+    width: 80%;
+  }
+
+  .icon {
+    left: 16px;
+  }
+
+  .sephora_img p {
+    font-size: 18px;
+  }
+
+  .product_labels {
+    width: 100%;
+  }
+
+  .item_image img {
+    width: 120%;
+  }
+
+  .popular_topic_card {
+    display: flex;
+  }
+
+  .popular_topic_icon img {
+    width: 75%;
+  }
+
+  .popular_topic_icon {
+    width: 18%;
+  }
+
+  .help_topics_header h3 {
+    font-size: 18px;
+  }
+
+  .help_topics_grid h4 {
+    font-size: 16px;
+  }
+
+  .payment_banner_image img {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .payment_banner_content {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .results_count {
+    font-size: 14px;
   }
 }

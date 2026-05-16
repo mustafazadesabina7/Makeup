@@ -48,40 +48,40 @@ navItems.forEach((item) => {
 });
 
 /*4.Sort by: Relevance main hisse*/
-document.addEventListener("DOMContentLoaded", function () {
-  const wrapper = document.getElementById("sortWrapper");
-  const btn = document.getElementById("sortBtn");
-  const items = document.querySelectorAll(".sort-dropdown li");
-  const selected = document.getElementById("selectedSort");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const wrapper = document.getElementById("sortWrapper");
+//   const btn = document.getElementById("sortBtn");
+//   const items = document.querySelectorAll(".sort-dropdown li");
+//   const selected = document.getElementById("selectedSort");
 
-  // Aç / bağla
-  btn.addEventListener("click", function (e) {
-    e.stopPropagation();
-    wrapper.classList.toggle("active");
-  });
+//   // Aç / bağla
+//   btn.addEventListener("click", function (e) {
+//     e.stopPropagation();
+//     wrapper.classList.toggle("active");
+//   });
 
-  // Item seçimi
-  items.forEach((item) => {
-    item.addEventListener("click", function (e) {
-      e.stopPropagation();
-      selected.textContent = this.dataset.value;
-      wrapper.classList.remove("active");
-    });
-  });
+//   // Item seçimi
+//   items.forEach((item) => {
+//     item.addEventListener("click", function (e) {
+//       e.stopPropagation();
+//       selected.textContent = this.dataset.value;
+//       wrapper.classList.remove("active");
+//     });
+//   });
 
-  // Çöldə klik → bağla
-  document.addEventListener("click", function () {
-    wrapper.classList.remove("active");
-  });
-});
+//   // Çöldə klik → bağla
+//   document.addEventListener("click", function () {
+//     wrapper.classList.remove("active");
+//   });
+// });
 
 /* 5. Footer hisse.Sephora Events*/
-const menuIcon = document.getElementById("menuIcon");
-const navMenu = document.querySelector(".nav_menu");
+// const menuIcon = document.getElementById("menuIcon");
+// const navMenu = document.querySelector(".nav_menu");
 
-menuIcon.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
+// menuIcon.addEventListener("click", () => {
+//   navMenu.classList.toggle("active");
+// });
 
 // 6*. Header, Events hisse.
 // const filter_header1 = document.querySelector(".filter_header1");
